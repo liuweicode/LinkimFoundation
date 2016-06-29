@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LinkimFoundation_Example' do
+  pod 'LinkimFoundation', :path => '../'
+
+  target 'LinkimFoundation_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
