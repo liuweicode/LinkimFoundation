@@ -1,0 +1,6 @@
+framework module LinkimFoundation {
+  umbrella header "LinkimFoundation-umbrella.h"
+
+  export *
+  module * { export * }
+}

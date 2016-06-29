@@ -1,0 +1,16 @@
+PODS:
+  - LinkimFoundation (0.1.0)
+
+DEPENDENCIES:
+  - LinkimFoundation (from `../`)
+
+EXTERNAL SOURCES:
+  LinkimFoundation:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LinkimFoundation: 75a704b9180e8aba3b6e6b09b81834f5e7a400bc
+
+PODFILE CHECKSUM: 9831a0582fee45d34fb6fe1d136afb7255c9a9f5
+
+COCOAPODS: 1.0.1
