@@ -12,7 +12,7 @@
 		3AFC32D4FFCA2DE234D4D8D833C9D8DB /* Pods-LinkimFoundation_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB74A161881A2D6A240B8C6F4C9E2D19 /* Pods-LinkimFoundation_Tests-dummy.m */; };
 		51437375D99026D2D6395A7D2DDCF0F0 /* Pods-LinkimFoundation_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6037769D2CC5E9D07FDF54B2F2DD7654 /* Pods-LinkimFoundation_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		589213A31162DF80B440655B0DC1F54A /* LinkimFoundation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C24E169A170D8C13D97F86206E0358 /* LinkimFoundation-dummy.m */; };
-		6EB47A9AA36777A434C18FC418204F1B /* DNNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A63C3D30BB370F850F40B0FCDCB2AB /* DNNotification.swift */; };
+		6EB47A9AA36777A434C18FC418204F1B /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A63C3D30BB370F850F40B0FCDCB2AB /* Notification.swift */; };
 		70DE91ADB7F34C670E2910575416777F /* Pods-LinkimFoundation_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C4EA3C45C026B11C218DFD3C889BF2FF /* Pods-LinkimFoundation_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		729C459910F9506DD512746DA94F4BE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		DCC1131C87B614FA4DA16953B115EE0D /* LinkimFoundation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 07D91EAF70D4B098C1189920E278A94F /* LinkimFoundation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -54,7 +54,7 @@
 		ACA0DBAB4EE7A81DD65D2B1CFEAF8693 /* Pods-LinkimFoundation_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LinkimFoundation_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		AFFBD7B635CF345876A24D95A2B7126F /* Pods-LinkimFoundation_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LinkimFoundation_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B15C9C994E546363FDB2BE93DAEF168C /* Pods-LinkimFoundation_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LinkimFoundation_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		C1A63C3D30BB370F850F40B0FCDCB2AB /* DNNotification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DNNotification.swift; sourceTree = "<group>"; };
+		C1A63C3D30BB370F850F40B0FCDCB2AB /* Notification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		C4EA3C45C026B11C218DFD3C889BF2FF /* Pods-LinkimFoundation_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LinkimFoundation_Example-umbrella.h"; sourceTree = "<group>"; };
 		C9A27CDFFED494DD504F2F43A308AEDB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAA134F3BE69BF3425D69D77A98558E4 /* Pods_LinkimFoundation_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinkimFoundation_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -217,7 +217,7 @@
 		E6A75BF3E3AB9C6906E5BB5FFB222CD5 /* Notification */ = {
 			isa = PBXGroup;
 			children = (
-				C1A63C3D30BB370F850F40B0FCDCB2AB /* DNNotification.swift */,
+				C1A63C3D30BB370F850F40B0FCDCB2AB /* Notification.swift */,
 			);
 			path = Notification;
 			sourceTree = "<group>";
@@ -353,7 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EB47A9AA36777A434C18FC418204F1B /* DNNotification.swift in Sources */,
+				6EB47A9AA36777A434C18FC418204F1B /* Notification.swift in Sources */,
 				589213A31162DF80B440655B0DC1F54A /* LinkimFoundation-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
