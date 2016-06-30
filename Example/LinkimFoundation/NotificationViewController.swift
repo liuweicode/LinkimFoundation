@@ -26,6 +26,7 @@ class NotificationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.whiteColor()
+        print("-->viewDidLoad")
         self.postNotification("viewDidLoad")
     }
 
@@ -36,18 +37,22 @@ class NotificationViewController: UIViewController {
     }
     
     override func viewWillAppear(animated: Bool) {
+        print("-->viewWillAppear")
         self.postNotification("viewWillAppear")
     }
     
     override func viewDidAppear(animated: Bool) {
+        print("-->viewDidAppear")
         self.postNotification("viewDidAppear")
     }
     
     override func viewWillDisappear(animated: Bool) {
+        print("-->viewWillDisappear")
         self.postNotification("viewWillDisappear")
     }
     
     override func viewDidDisappear(animated: Bool) {
+        print("-->viewDidDisappear")
         self.postNotification("viewDidDisappear")
     }
     
