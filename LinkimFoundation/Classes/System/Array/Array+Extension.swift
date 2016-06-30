@@ -15,7 +15,7 @@ extension Array where Element: Equatable {
             self.removeAtIndex(index)
         }
     }
-    
+
     mutating func removeObjectsInArray(array: [Element]) {
         for object in array {
             self.removeObject(object)
