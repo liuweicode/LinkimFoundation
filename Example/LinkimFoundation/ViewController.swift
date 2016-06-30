@@ -13,7 +13,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.registerNotification("123")
+        self.timer(selector: #selector(test(_:)), timeInterval: 1, repeats: true, name: "123")
+    }
+    
+    func test(timer:NSTimer)
+    {
+        print("==>\(timer.timeName) \r\n")
     }
 
     override func didReceiveMemoryWarning() {

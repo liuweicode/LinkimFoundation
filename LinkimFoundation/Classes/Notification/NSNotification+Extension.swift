@@ -1,5 +1,5 @@
 //
-//  DNNotification.swift
+//  NSNotification+Extension.swift
 //  Happilitt
 //
 //  Created by 刘伟 on 16/4/18.
@@ -41,20 +41,10 @@ public extension NSObject
     /**
      发送一个指定通知
      
-     - parameter name: 通知名称
-     */
-    func postNotification(name:String)
-    {
-        (self.dynamicType).postNotification(name, withObject: nil)
-    }
-    
-    /**
-     发送一个指定通知
-     
      - parameter name:   通知名称
-     - parameter object: 通知内容
+     - parameter object: 通知内容 默认为nil
      */
-    func postNotification(name:String,withObject object:NSObject)
+    func postNotification(name:String,withObject object:NSObject? = nil)
     {
         (self.dynamicType).postNotification(name, withObject: object)
     }
@@ -64,11 +54,11 @@ public extension NSObject
      
      - parameter name: 通知名称
      */
-    func registerNotification(name:String)
+    func registerNotification(name aName:String,selector aSelector: Selector)
     {
         // 确保只注册一次
-        unRegisterNotification(name)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(handleNotification(_:)), name: name, object: nil)
+        unRegisterNotification(aName)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: aSelector, name: aName, object: nil)
     }
     
     /**
@@ -87,17 +77,6 @@ public extension NSObject
     func unRegisterAllNotification()
     {
         NSNotificationCenter.defaultCenter().removeObserver(self)
-    }
-    
-    /**
-     当前对象接收到通知
-     
-     - parameter notification: 通知
-     */
-    func handleNotification(notification:NSNotification)
-    {
-        //根据具体业务实现这个方法
-        fatalError("必须实现 handleNotification 方法")
     }
     
 }

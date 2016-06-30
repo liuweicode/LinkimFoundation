@@ -6,6 +6,5 @@ target 'LinkimFoundation_Example' do
   target 'LinkimFoundation_Tests' do
     inherit! :search_paths
 
-    
   end
 end
