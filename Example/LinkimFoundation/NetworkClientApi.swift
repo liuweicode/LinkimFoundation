@@ -1,5 +1,5 @@
 //
-//  NetworkClientDemo.swift
+//  NetworkClientApi.swift
 //  LinkimFoundation
 //
 //  Created by 刘伟 on 16/6/30.
@@ -10,7 +10,7 @@ import UIKit
 import LinkimFoundation
 import Alamofire
 
-class NetworkClientDemo{
+class NetworkClientApi{
     
     class func POST(target target:NSObject,params:[String:AnyObject], url:String, successCallback: (message:NetworkMessage) -> Void, failureCallback: (message:NetworkMessage) -> Void)
     {
@@ -22,7 +22,7 @@ class NetworkClientDemo{
                 // 有网络错误
                 failureCallback(message: message)
             }else{
-                if let _ = message.response?.data
+                if let _ = message.response.data
                 {
                     // 解析data
                     successCallback(message: message)

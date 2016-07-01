@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class NetworkResponse: NSObject {
+public class NetworkResponse : NSObject {
 
     // 响应数据
     public var data:NSData?

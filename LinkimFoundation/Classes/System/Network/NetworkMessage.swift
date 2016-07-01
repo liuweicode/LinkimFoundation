@@ -12,10 +12,10 @@ import UIKit
 public class NetworkMessage: NSObject {
 
     // 请求数据
-    public var request: NetworkRequest?
+    public lazy var request = NetworkRequest()
     
     // 响应的数据
-    public var response: NetworkResponse?
+    public lazy var response = NetworkResponse()
     
     // 错误
     public var networkError: NetworkError?
@@ -26,10 +26,10 @@ public class NetworkMessage: NSObject {
     // 数据标识
     public var tag: NSInteger?
     
-    init(url url:String, params params:[String:AnyObject],method method:NetworkRequestMethod) {
-        request = NetworkRequest()
-        request!.url = url
-        request!.params = params
-        request?.method = method
-    }
+//    init(url url:String, params params:[String:AnyObject],method method:NetworkRequestMethod) {
+//        request = NetworkRequest()
+//        request!.url = url
+//        request!.params = params
+//        request?.method = method
+//    }
 }

@@ -9,29 +9,21 @@
 import UIKit
 import Alamofire
 
-//public typealias NetworkSuccessBlock = (message:NetworkMessage) -> Void
-//public typealias NetworkFailBlock = (message:NetworkMessage,error:NSError) -> Void
-
 public typealias NetworkCompletionHandler = (message:NetworkMessage) -> Void
 
 public enum NetworkRequestMethod : Int {
     case POST, GET
 }
 
-//public protocol NetworkClientProtocol {
-//    func POST(successCallback successCallback:()->Void, failureCallback failureCallback:(error:NSError)->Void) -> Request;
-//    func GET(successCallback successCallback:()->Void, failureCallback failureCallback:(error:NSError)->Void) -> Request;
-//}
-
 var clientNO:UInt = 1
 
 public class NetworkBaseClient : NSObject {
     
     // 网络数据封装
-    public var message: NetworkMessage?
+    public lazy var message = NetworkMessage()
     
     // 回调者
-    public var target:NSObject
+    private var target:NSObject
     
     // 超时时间
     let networkTimeout:NSTimeInterval = 20
@@ -55,14 +47,16 @@ public class NetworkBaseClient : NSObject {
     }
     
     public func send(method method:NetworkRequestMethod, params params:[String:AnyObject], url url:String, completionHandler completionHandler:NetworkCompletionHandler) -> NSNumber? {
-        self.message = NetworkMessage(url: url, params: params, method: method)
+        self.message.request.url = url
+        self.message.request.params = params
+        self.message.request.method = method
         self.completionHandler = completionHandler
         return self.send()
     }
     
     func send() -> NSNumber?
     {
-        switch self.message!.request!.method {
+        switch self.message.request.method {
             case .POST:
                 self.task = self.POST()
             case .GET:
@@ -81,22 +75,21 @@ public class NetworkBaseClient : NSObject {
        return self.target
     }
     
-    
     public func POST() -> Request {
-        return Alamofire.request(.POST, self.message!.request!.url!,
-            parameters:self.message?.request?.params,
+        return Alamofire.request(.POST, self.message.request.url!,
+            parameters:self.message.request.params,
             encoding: Alamofire.ParameterEncoding.JSON,
             headers: nil ).validate().response(completionHandler: {[weak self] (request, response, data, error) in
                 // 设置请求头信息
-                self?.message?.request?.headers = request?.allHTTPHeaderFields
+                self?.message.request.headers = request?.allHTTPHeaderFields
                 // 设置响应信息
                 var networkResponse = NetworkResponse()
                 networkResponse.data = data
                 networkResponse.headers = response?.allHeaderFields
-                self?.message?.response = networkResponse
+                self?.message.response = networkResponse
                 // 是否有错误
                 if let responseError = error{
-                    self?.message?.networkError = NetworkError.httpError(responseError.code, responseError.description)
+                    self?.message.networkError = NetworkError.httpError(responseError.code, responseError.description)
                 }
                 self?.completionHandler?(message: (self?.message)!)
                 NetworkClientManager.sharedInstance.removeClientWithId((self?.clientId!)!)
@@ -104,18 +97,23 @@ public class NetworkBaseClient : NSObject {
     }
     
     public func GET() -> Request {
-        return Alamofire.request(.POST, self.message!.request!.url!,
-            parameters:self.message?.request?.params,
+        return Alamofire.request(.GET, self.message.request.url!,
+            parameters:self.message.request.params,
             encoding: Alamofire.ParameterEncoding.JSON,
             headers: nil ).validate().response(completionHandler: {[weak self] (request, response, data, error) in
-                
+                // 设置请求头信息
+                self?.message.request.headers = request?.allHTTPHeaderFields
+                // 设置响应信息
                 var networkResponse = NetworkResponse()
                 networkResponse.data = data
                 networkResponse.headers = response?.allHeaderFields
-                self?.message?.response = networkResponse
-                
+                self?.message.response = networkResponse
+                // 是否有错误
+                if let responseError = error{
+                    self?.message.networkError = NetworkError.httpError(responseError.code, responseError.description)
+                }
                 self?.completionHandler?(message: (self?.message)!)
                 NetworkClientManager.sharedInstance.removeClientWithId((self?.clientId!)!)
-            })
+                })
     }
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class NetworkRequest: NSObject {
+public class NetworkRequest : NSObject {
 
     // 请求地址
     public var url:String?

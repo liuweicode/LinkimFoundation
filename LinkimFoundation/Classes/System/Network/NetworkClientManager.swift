@@ -8,16 +8,16 @@
 
 import UIKit
 
-class NetworkClientManager: NSObject {
+public class NetworkClientManager: NSObject {
 
     // 单例类
-    static let sharedInstance = NetworkClientManager()
+    public static let sharedInstance = NetworkClientManager()
     
     // 私有化init方法
     private override init() {}
     
     // 请求任务
-    lazy var requests = [NSNumber:NetworkBaseClient]()
+    public lazy var requests = [NSNumber:NetworkBaseClient]()
     
     /**
      添加请求到管理队列
