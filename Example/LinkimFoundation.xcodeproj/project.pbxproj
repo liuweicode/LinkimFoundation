@@ -17,6 +17,7 @@
 		FE6347411D24EFEF004C75AE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347401D24EFEF004C75AE /* MainView.swift */; };
 		FE6347431D24F616004C75AE /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347421D24F616004C75AE /* NotificationViewController.swift */; };
 		FE6347451D24F621004C75AE /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347441D24F621004C75AE /* TimerViewController.swift */; };
+		FE6347561D253646004C75AE /* NetworkClientDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347551D253646004C75AE /* NetworkClientDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		FE6347401D24EFEF004C75AE /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		FE6347421D24F616004C75AE /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		FE6347441D24F621004C75AE /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		FE6347551D253646004C75AE /* NetworkClientDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClientDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 				FE6347421D24F616004C75AE /* NotificationViewController.swift */,
 				FE6347441D24F621004C75AE /* TimerViewController.swift */,
+				FE6347551D253646004C75AE /* NetworkClientDemo.swift */,
 			);
 			name = "Example for LinkimFoundation";
 			path = LinkimFoundation;
@@ -366,6 +369,7 @@
 			files = (
 				FE6347451D24F621004C75AE /* TimerViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* MainViewController.swift in Sources */,
+				FE6347561D253646004C75AE /* NetworkClientDemo.swift in Sources */,
 				FE6347411D24EFEF004C75AE /* MainView.swift in Sources */,
 				FE6347431D24F616004C75AE /* NotificationViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,

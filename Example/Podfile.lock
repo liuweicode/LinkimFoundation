@@ -1,5 +1,7 @@
 PODS:
+  - Alamofire (3.4.1)
   - LinkimFoundation (0.0.1):
+    - Alamofire (~> 3.4.1)
     - SnapKit (~> 0.21.0)
   - SnapKit (0.21.1)
 
@@ -11,7 +13,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LinkimFoundation: 653ffa0d0f520c8f95740740ee324fc91ee84914
+  Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  LinkimFoundation: 7bb3a0d5722e4104c49f64e0298d61d38076b43c
   SnapKit: bbad04cb016c7cead63965f16b00c09318d271ee
 
 PODFILE CHECKSUM: 284927c873dddc3bf6e0177a682dcbbc7a4adcd3

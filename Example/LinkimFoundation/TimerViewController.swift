@@ -93,6 +93,14 @@ class TimerViewController: UIViewController {
     {
         print("\(timer.timeName)")
         label.text = "\(Int(label.text!)!+1)"
+        
+        NetworkClientDemo.POST(target: self, params: ["p":label.text!], url:"https://www.google.com" , successCallback: { (message) in
+            let str = String(data: message.response!.data!,encoding: NSUTF8StringEncoding)
+            
+            print("成功 请求参数为：\(message.request?.params) 请求头:\(message.request?.headers) 响应头:\(message.response?.headers) 响应数据：\(str)")
+            }) { (message) in
+              print("失败 errorcode:\(message.networkError)")
+        }
     }
 
 

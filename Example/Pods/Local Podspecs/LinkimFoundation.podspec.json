@@ -28,6 +28,9 @@
   "dependencies": {
     "SnapKit": [
       "~> 0.21.0"
+    ],
+    "Alamofire": [
+      "~> 3.4.1"
     ]
   }
 }
