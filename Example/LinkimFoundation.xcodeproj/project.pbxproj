@@ -18,12 +18,17 @@
 		FE6347431D24F616004C75AE /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347421D24F616004C75AE /* NotificationViewController.swift */; };
 		FE6347451D24F621004C75AE /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347441D24F621004C75AE /* TimerViewController.swift */; };
 		FE6347611D2632FC004C75AE /* StringDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347601D2632FC004C75AE /* StringDemoViewController.swift */; };
-		FE63476D1D265960004C75AE /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347671D265960004C75AE /* NetworkClient.swift */; };
-		FE63476E1D265960004C75AE /* NetworkClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347681D265960004C75AE /* NetworkClientManager.swift */; };
-		FE63476F1D265960004C75AE /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347691D265960004C75AE /* NetworkError.swift */; };
-		FE6347701D265960004C75AE /* NetworkMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE63476A1D265960004C75AE /* NetworkMessage.swift */; };
-		FE6347711D265960004C75AE /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE63476B1D265960004C75AE /* NetworkRequest.swift */; };
-		FE6347721D265960004C75AE /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE63476C1D265960004C75AE /* NetworkResponse.swift */; };
+		FE63477C1D266E01004C75AE /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347751D266E01004C75AE /* NetworkClient.swift */; };
+		FE63477D1D266E01004C75AE /* NetworkClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347761D266E01004C75AE /* NetworkClientManager.swift */; };
+		FE63477E1D266E01004C75AE /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347771D266E01004C75AE /* NetworkError.swift */; };
+		FE63477F1D266E01004C75AE /* NetworkMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347781D266E01004C75AE /* NetworkMessage.swift */; };
+		FE6347801D266E01004C75AE /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347791D266E01004C75AE /* NetworkRequest.swift */; };
+		FE6347811D266E01004C75AE /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE63477A1D266E01004C75AE /* NetworkResponse.swift */; };
+		FE6347841D266EC3004C75AE /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347831D266EC3004C75AE /* TabBarView.swift */; };
+		FE6347861D266F83004C75AE /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347851D266F83004C75AE /* TabBarItem.swift */; };
+		FE6347881D267017004C75AE /* TabBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347871D267017004C75AE /* TabBarItemView.swift */; };
+		FE63478A1D2678E5004C75AE /* TabBarNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347891D2678E5004C75AE /* TabBarNotification.swift */; };
+		FE63478C1D26822E004C75AE /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE63478B1D26822E004C75AE /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,12 +64,17 @@
 		FE6347421D24F616004C75AE /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		FE6347441D24F621004C75AE /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		FE6347601D2632FC004C75AE /* StringDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringDemoViewController.swift; sourceTree = "<group>"; };
-		FE6347671D265960004C75AE /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
-		FE6347681D265960004C75AE /* NetworkClientManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClientManager.swift; sourceTree = "<group>"; };
-		FE6347691D265960004C75AE /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
-		FE63476A1D265960004C75AE /* NetworkMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkMessage.swift; sourceTree = "<group>"; };
-		FE63476B1D265960004C75AE /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
-		FE63476C1D265960004C75AE /* NetworkResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		FE6347751D266E01004C75AE /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		FE6347761D266E01004C75AE /* NetworkClientManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClientManager.swift; sourceTree = "<group>"; };
+		FE6347771D266E01004C75AE /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		FE6347781D266E01004C75AE /* NetworkMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkMessage.swift; sourceTree = "<group>"; };
+		FE6347791D266E01004C75AE /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		FE63477A1D266E01004C75AE /* NetworkResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		FE6347831D266EC3004C75AE /* TabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		FE6347851D266F83004C75AE /* TabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		FE6347871D267017004C75AE /* TabBarItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarItemView.swift; sourceTree = "<group>"; };
+		FE6347891D2678E5004C75AE /* TabBarNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarNotification.swift; sourceTree = "<group>"; };
+		FE63478B1D26822E004C75AE /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,23 +194,52 @@
 		FE6347651D265960004C75AE /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				FE6347661D265960004C75AE /* Network */,
+				FE6347731D266E01004C75AE /* System */,
+				FE63477B1D266E01004C75AE /* UI */,
 			);
 			name = Foundation;
 			path = LinkimFoundation/Foundation;
 			sourceTree = "<group>";
 		};
-		FE6347661D265960004C75AE /* Network */ = {
+		FE6347731D266E01004C75AE /* System */ = {
 			isa = PBXGroup;
 			children = (
-				FE6347671D265960004C75AE /* NetworkClient.swift */,
-				FE6347681D265960004C75AE /* NetworkClientManager.swift */,
-				FE6347691D265960004C75AE /* NetworkError.swift */,
-				FE63476A1D265960004C75AE /* NetworkMessage.swift */,
-				FE63476B1D265960004C75AE /* NetworkRequest.swift */,
-				FE63476C1D265960004C75AE /* NetworkResponse.swift */,
+				FE6347741D266E01004C75AE /* Network */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		FE6347741D266E01004C75AE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FE6347751D266E01004C75AE /* NetworkClient.swift */,
+				FE6347761D266E01004C75AE /* NetworkClientManager.swift */,
+				FE6347771D266E01004C75AE /* NetworkError.swift */,
+				FE6347781D266E01004C75AE /* NetworkMessage.swift */,
+				FE6347791D266E01004C75AE /* NetworkRequest.swift */,
+				FE63477A1D266E01004C75AE /* NetworkResponse.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		FE63477B1D266E01004C75AE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FE6347821D266E91004C75AE /* TabBarController */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		FE6347821D266E91004C75AE /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				FE6347831D266EC3004C75AE /* TabBarView.swift */,
+				FE6347851D266F83004C75AE /* TabBarItem.swift */,
+				FE6347871D267017004C75AE /* TabBarItemView.swift */,
+				FE6347891D2678E5004C75AE /* TabBarNotification.swift */,
+				FE63478B1D26822E004C75AE /* TabBarController.swift */,
+			);
+			path = TabBarController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -402,18 +441,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE63476E1D265960004C75AE /* NetworkClientManager.swift in Sources */,
 				FE6347451D24F621004C75AE /* TimerViewController.swift in Sources */,
+				FE63477D1D266E01004C75AE /* NetworkClientManager.swift in Sources */,
+				FE6347841D266EC3004C75AE /* TabBarView.swift in Sources */,
 				607FACD81AFB9204008FA782 /* MainViewController.swift in Sources */,
+				FE6347861D266F83004C75AE /* TabBarItem.swift in Sources */,
 				FE6347611D2632FC004C75AE /* StringDemoViewController.swift in Sources */,
+				FE63478C1D26822E004C75AE /* TabBarController.swift in Sources */,
+				FE63478A1D2678E5004C75AE /* TabBarNotification.swift in Sources */,
 				FE6347411D24EFEF004C75AE /* MainView.swift in Sources */,
+				FE6347811D266E01004C75AE /* NetworkResponse.swift in Sources */,
+				FE6347881D267017004C75AE /* TabBarItemView.swift in Sources */,
+				FE63477C1D266E01004C75AE /* NetworkClient.swift in Sources */,
+				FE63477E1D266E01004C75AE /* NetworkError.swift in Sources */,
 				FE6347431D24F616004C75AE /* NotificationViewController.swift in Sources */,
-				FE63476D1D265960004C75AE /* NetworkClient.swift in Sources */,
+				FE6347801D266E01004C75AE /* NetworkRequest.swift in Sources */,
+				FE63477F1D266E01004C75AE /* NetworkMessage.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-				FE63476F1D265960004C75AE /* NetworkError.swift in Sources */,
-				FE6347711D265960004C75AE /* NetworkRequest.swift in Sources */,
-				FE6347701D265960004C75AE /* NetworkMessage.swift in Sources */,
-				FE6347721D265960004C75AE /* NetworkResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
