@@ -18,7 +18,8 @@ class MainViewController: UIViewController,UITableViewDataSource,UITableViewDele
     }()
 
     let vcList = [  "Notification",
-                    "Timer"
+                    "Timer",
+                    "String"
                  ]
     
     override func viewDidLoad() {
@@ -58,6 +59,9 @@ class MainViewController: UIViewController,UITableViewDataSource,UITableViewDele
             self.navigationController?.pushViewController(controller, animated: true)
         case 1: // Timer
             let controller = TimerViewController()
+            self.navigationController?.pushViewController(controller, animated: true)
+        case 2: // String
+            let controller = StringDemoViewController()
             self.navigationController?.pushViewController(controller, animated: true)
         default:
             break

@@ -18,6 +18,7 @@
 		FE6347431D24F616004C75AE /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347421D24F616004C75AE /* NotificationViewController.swift */; };
 		FE6347451D24F621004C75AE /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347441D24F621004C75AE /* TimerViewController.swift */; };
 		FE6347561D253646004C75AE /* NetworkClientApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347551D253646004C75AE /* NetworkClientApi.swift */; };
+		FE6347611D2632FC004C75AE /* StringDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347601D2632FC004C75AE /* StringDemoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		FE6347421D24F616004C75AE /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		FE6347441D24F621004C75AE /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		FE6347551D253646004C75AE /* NetworkClientApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClientApi.swift; sourceTree = "<group>"; };
+		FE6347601D2632FC004C75AE /* StringDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringDemoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				FE6347421D24F616004C75AE /* NotificationViewController.swift */,
 				FE6347441D24F621004C75AE /* TimerViewController.swift */,
 				FE6347551D253646004C75AE /* NetworkClientApi.swift */,
+				FE6347601D2632FC004C75AE /* StringDemoViewController.swift */,
 			);
 			name = "Example for LinkimFoundation";
 			path = LinkimFoundation;
@@ -370,6 +373,7 @@
 				FE6347451D24F621004C75AE /* TimerViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* MainViewController.swift in Sources */,
 				FE6347561D253646004C75AE /* NetworkClientApi.swift in Sources */,
+				FE6347611D2632FC004C75AE /* StringDemoViewController.swift in Sources */,
 				FE6347411D24EFEF004C75AE /* MainView.swift in Sources */,
 				FE6347431D24F616004C75AE /* NotificationViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,

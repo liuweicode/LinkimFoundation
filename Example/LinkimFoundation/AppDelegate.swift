@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreGraphics
+import LinkimFoundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
