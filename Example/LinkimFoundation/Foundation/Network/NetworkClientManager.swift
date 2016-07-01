@@ -8,16 +8,16 @@
 
 import UIKit
 
-public class NetworkClientManager: NSObject {
+class NetworkClientManager: NSObject {
 
     // 单例类
-    public static let sharedInstance = NetworkClientManager()
+    static let sharedInstance = NetworkClientManager()
     
     // 私有化init方法
-    private override init() {}
+    override init() {}
     
     // 请求任务
-    public lazy var requests = [NSNumber:NetworkBaseClient]()
+    lazy var requests = [NSNumber:NetworkClient]()
     
     /**
      添加请求到管理队列
@@ -25,7 +25,7 @@ public class NetworkClientManager: NSObject {
      - parameter aClient:  单次请求
      - parameter clientId: 标识
      */
-    func addClient(client aClient:NetworkBaseClient, forClientId clientId:NSNumber)
+    func addClient(client aClient:NetworkClient, forClientId clientId:NSNumber)
     {
        self.requests[clientId] = aClient
     }
@@ -51,7 +51,7 @@ public class NetworkClientManager: NSObject {
     {
         var clientId:NSNumber?
         for number in self.requests.keys {
-            var client = self.requests[number]!
+            let client = self.requests[number]!
             if client.requestReceive() == receive {
                 clientId = client.clientId
                 break

@@ -9,21 +9,21 @@
 import UIKit
 
 // 网络数据封装
-public class NetworkMessage: NSObject {
+class NetworkMessage: NSObject {
 
     // 请求数据
-    public lazy var request = NetworkRequest()
+    lazy var request = NetworkRequest()
     
     // 响应的数据
-    public lazy var response = NetworkResponse()
+    lazy var response = NetworkResponse()
     
     // 错误
-    public var networkError: NetworkError?
+    var networkError: NetworkErrorType?
     
     // 用户自定义数据,与网络数据无关
-    public var userInfo: AnyObject?
+    var userInfo: AnyObject?
     
     // 数据标识
-    public var tag: NSInteger?
+    var tag: NSInteger?
     
 }

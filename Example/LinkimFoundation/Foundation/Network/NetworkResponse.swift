@@ -8,11 +8,11 @@
 
 import UIKit
 
-public class NetworkResponse : NSObject {
+class NetworkResponse : NSObject {
 
     // 响应体数据
-    public var data:NSData?
+    var data:NSData?
     
     // 响应头
-    public var headers: [NSObject : AnyObject]?
+    var headers: [NSObject : AnyObject]?
 }

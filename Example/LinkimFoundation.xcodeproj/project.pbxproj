@@ -17,8 +17,13 @@
 		FE6347411D24EFEF004C75AE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347401D24EFEF004C75AE /* MainView.swift */; };
 		FE6347431D24F616004C75AE /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347421D24F616004C75AE /* NotificationViewController.swift */; };
 		FE6347451D24F621004C75AE /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347441D24F621004C75AE /* TimerViewController.swift */; };
-		FE6347561D253646004C75AE /* NetworkClientApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347551D253646004C75AE /* NetworkClientApi.swift */; };
 		FE6347611D2632FC004C75AE /* StringDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347601D2632FC004C75AE /* StringDemoViewController.swift */; };
+		FE63476D1D265960004C75AE /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347671D265960004C75AE /* NetworkClient.swift */; };
+		FE63476E1D265960004C75AE /* NetworkClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347681D265960004C75AE /* NetworkClientManager.swift */; };
+		FE63476F1D265960004C75AE /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347691D265960004C75AE /* NetworkError.swift */; };
+		FE6347701D265960004C75AE /* NetworkMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE63476A1D265960004C75AE /* NetworkMessage.swift */; };
+		FE6347711D265960004C75AE /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE63476B1D265960004C75AE /* NetworkRequest.swift */; };
+		FE6347721D265960004C75AE /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE63476C1D265960004C75AE /* NetworkResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +58,13 @@
 		FE6347401D24EFEF004C75AE /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		FE6347421D24F616004C75AE /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		FE6347441D24F621004C75AE /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
-		FE6347551D253646004C75AE /* NetworkClientApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClientApi.swift; sourceTree = "<group>"; };
 		FE6347601D2632FC004C75AE /* StringDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringDemoViewController.swift; sourceTree = "<group>"; };
+		FE6347671D265960004C75AE /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		FE6347681D265960004C75AE /* NetworkClientManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClientManager.swift; sourceTree = "<group>"; };
+		FE6347691D265960004C75AE /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		FE63476A1D265960004C75AE /* NetworkMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkMessage.swift; sourceTree = "<group>"; };
+		FE63476B1D265960004C75AE /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		FE63476C1D265960004C75AE /* NetworkResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +99,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				FE6347651D265960004C75AE /* Foundation */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for LinkimFoundation */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -118,7 +129,6 @@
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 				FE6347421D24F616004C75AE /* NotificationViewController.swift */,
 				FE6347441D24F621004C75AE /* TimerViewController.swift */,
-				FE6347551D253646004C75AE /* NetworkClientApi.swift */,
 				FE6347601D2632FC004C75AE /* StringDemoViewController.swift */,
 			);
 			name = "Example for LinkimFoundation";
@@ -169,6 +179,28 @@
 				6E5E7A20DDAF96CDEF51A007 /* Pods-LinkimFoundation_Tests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		FE6347651D265960004C75AE /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				FE6347661D265960004C75AE /* Network */,
+			);
+			name = Foundation;
+			path = LinkimFoundation/Foundation;
+			sourceTree = "<group>";
+		};
+		FE6347661D265960004C75AE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FE6347671D265960004C75AE /* NetworkClient.swift */,
+				FE6347681D265960004C75AE /* NetworkClientManager.swift */,
+				FE6347691D265960004C75AE /* NetworkError.swift */,
+				FE63476A1D265960004C75AE /* NetworkMessage.swift */,
+				FE63476B1D265960004C75AE /* NetworkRequest.swift */,
+				FE63476C1D265960004C75AE /* NetworkResponse.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,13 +402,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE63476E1D265960004C75AE /* NetworkClientManager.swift in Sources */,
 				FE6347451D24F621004C75AE /* TimerViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* MainViewController.swift in Sources */,
-				FE6347561D253646004C75AE /* NetworkClientApi.swift in Sources */,
 				FE6347611D2632FC004C75AE /* StringDemoViewController.swift in Sources */,
 				FE6347411D24EFEF004C75AE /* MainView.swift in Sources */,
 				FE6347431D24F616004C75AE /* NotificationViewController.swift in Sources */,
+				FE63476D1D265960004C75AE /* NetworkClient.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				FE63476F1D265960004C75AE /* NetworkError.swift in Sources */,
+				FE6347711D265960004C75AE /* NetworkRequest.swift in Sources */,
+				FE6347701D265960004C75AE /* NetworkMessage.swift in Sources */,
+				FE6347721D265960004C75AE /* NetworkResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
