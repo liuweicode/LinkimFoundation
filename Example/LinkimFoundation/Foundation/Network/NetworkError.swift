@@ -9,10 +9,7 @@
 import UIKit
 
 enum NetworkErrorType {
-    
     case httpError(Int,String)
-    
     case dataError(Int,String)
-    
 }
 
