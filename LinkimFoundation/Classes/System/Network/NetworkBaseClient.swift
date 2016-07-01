@@ -58,7 +58,18 @@ public class NetworkBaseClient : NSObject {
     {
         switch self.message.request.method {
             case .POST:
-                self.task = self.POST()
+                self.task = self.request(.POST, self.message.request.url!, parameters: [:], encoding: ParameterEncoding.Custom({ (convertible, params) -> (NSMutableURLRequest, NSError?) in
+                    
+                    var data:NSData?
+                    do{
+                        data = try NSJSONSerialization.dataWithJSONObject(self.message.request.params!, options: NSJSONWritingOptions.init(rawValue: 0))
+                    }catch{
+                        print("--------请求参数报错-------")
+                    }
+                    let mutableRequest = convertible.URLRequest.copy() as! NSMutableURLRequest
+                    mutableRequest.HTTPBody = data
+                    return (mutableRequest, nil)
+                }), headers: self.message.request.headers)
             case .GET:
                 self.task = self.GET()
         }
@@ -75,7 +86,21 @@ public class NetworkBaseClient : NSObject {
        return self.target
     }
     
-    public func POST() -> Request {
+//    class func POST(target target:NSObject,params:[String:AnyObject], url:String, successCallback: (message:NetworkMessage) -> Void, failureCallback: (message:NetworkMessage) -> Void)
+    
+    public func request(method: Alamofire.Method, _ URLString: URLStringConvertible, parameters: [String: AnyObject]? = nil, encoding: ParameterEncoding = .URL,headers: [String: String]? = nil)
+        -> Request?
+    {
+       return Alamofire.request(method, URLString, parameters: parameters, encoding: encoding, headers: headers)
+    }
+    
+    
+    public func POST() -> Request? {
+        
+        //根据具体业务实现这个方法
+        fatalError("必须实现 POST 方法")
+        
+        return nil
         return Alamofire.request(.POST, self.message.request.url!,
             parameters:[:],
             encoding: Alamofire.ParameterEncoding.Custom({ (convertible, params) -> (NSMutableURLRequest, NSError?) in
@@ -105,24 +130,28 @@ public class NetworkBaseClient : NSObject {
                 })
     }
     
-    public func GET() -> Request {
-        return Alamofire.request(.GET, self.message.request.url!,
-            parameters:self.message.request.params,
-            encoding: Alamofire.ParameterEncoding.JSON,
-            headers: nil ).validate().response(completionHandler: {[weak self] (request, response, data, error) in
-                // 设置请求头信息
-                self?.message.request.headers = request?.allHTTPHeaderFields
-                // 设置响应信息
-                var networkResponse = NetworkResponse()
-                networkResponse.data = data
-                networkResponse.headers = response?.allHeaderFields
-                self?.message.response = networkResponse
-                // 是否有错误
-                if let responseError = error{
-                    self?.message.networkError = NetworkError.httpError(responseError.code, responseError.description)
-                }
-                self?.completionHandler?(message: (self?.message)!)
-                NetworkClientManager.sharedInstance.removeClientWithId((self?.clientId!)!)
-                })
+    public func GET() -> Request? {
+        //根据具体业务实现这个方法
+        fatalError("必须实现 POST 方法")
+        
+        return nil
+//        return Alamofire.request(.GET, self.message.request.url!,
+//            parameters:self.message.request.params,
+//            encoding: Alamofire.ParameterEncoding.JSON,
+//            headers: nil ).validate().response(completionHandler: {[weak self] (request, response, data, error) in
+//                // 设置请求头信息
+//                self?.message.request.headers = request?.allHTTPHeaderFields
+//                // 设置响应信息
+//                var networkResponse = NetworkResponse()
+//                networkResponse.data = data
+//                networkResponse.headers = response?.allHeaderFields
+//                self?.message.response = networkResponse
+//                // 是否有错误
+//                if let responseError = error{
+//                    self?.message.networkError = NetworkError.httpError(responseError.code, responseError.description)
+//                }
+//                self?.completionHandler?(message: (self?.message)!)
+//                NetworkClientManager.sharedInstance.removeClientWithId((self?.clientId!)!)
+//                })
     }
 }

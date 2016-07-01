@@ -20,7 +20,7 @@ public class NetworkRequest : NSObject {
     public var data:NSData?
     
     // 请求头
-    public var headers: [NSObject : AnyObject]?
+    public var headers: [String : String]?
     
     // 请求类型 POST / GET
     public var method:NetworkRequestMethod = .POST
