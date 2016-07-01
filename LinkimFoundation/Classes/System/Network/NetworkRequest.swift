@@ -16,6 +16,9 @@ public class NetworkRequest : NSObject {
     // 请求参数
     public var params: [String:AnyObject]?
     
+    // 请求体数据
+    public var data:NSData?
+    
     // 请求头
     public var headers: [NSObject : AnyObject]?
     

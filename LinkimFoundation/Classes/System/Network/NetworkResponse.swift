@@ -10,7 +10,7 @@ import UIKit
 
 public class NetworkResponse : NSObject {
 
-    // 响应数据
+    // 响应体数据
     public var data:NSData?
     
     // 响应头

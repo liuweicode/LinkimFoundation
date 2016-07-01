@@ -77,16 +77,25 @@ public class NetworkBaseClient : NSObject {
     
     public func POST() -> Request {
         return Alamofire.request(.POST, self.message.request.url!,
-            parameters:self.message.request.params,
-            encoding: Alamofire.ParameterEncoding.JSON,
+            parameters:[:],
+            encoding: Alamofire.ParameterEncoding.Custom({ (convertible, params) -> (NSMutableURLRequest, NSError?) in
+                
+                var data:NSData?
+                do{
+                    data = try NSJSONSerialization.dataWithJSONObject(self.message.request.params!, options: NSJSONWritingOptions.init(rawValue: 0))
+                }catch{
+                    print("--------请求参数报错-------")
+                }
+                let mutableRequest = convertible.URLRequest.copy() as! NSMutableURLRequest
+                mutableRequest.HTTPBody = data
+                return (mutableRequest, nil)
+            }),
             headers: nil ).validate().response(completionHandler: {[weak self] (request, response, data, error) in
                 // 设置请求头信息
                 self?.message.request.headers = request?.allHTTPHeaderFields
                 // 设置响应信息
-                var networkResponse = NetworkResponse()
-                networkResponse.data = data
-                networkResponse.headers = response?.allHeaderFields
-                self?.message.response = networkResponse
+                self?.message.response.data = data
+                self?.message.response.headers = response?.allHeaderFields
                 // 是否有错误
                 if let responseError = error{
                     self?.message.networkError = NetworkError.httpError(responseError.code, responseError.description)

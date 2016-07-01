@@ -10,5 +10,5 @@ import UIKit
 
 public enum NetworkError {
     case httpError(Int,String)
-    case dataError(String)
+    case dataError(Int,String)
 }

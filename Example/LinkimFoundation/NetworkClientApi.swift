@@ -27,7 +27,7 @@ class NetworkClientApi{
                     // 解析data
                     successCallback(message: message)
                 }else{
-                    message.networkError = NetworkError.dataError("数据有误")
+                    message.networkError = NetworkError.dataError(1,"数据有误")
                     failureCallback(message: message)
                 }
             }
