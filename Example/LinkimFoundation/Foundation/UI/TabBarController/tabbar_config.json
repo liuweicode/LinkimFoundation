@@ -1,0 +1,24 @@
+{
+    "backgroundColor": "#FFFFFF",
+    "shadowColor": "#CCCCCCDD",
+    "items": [
+              {
+              "className": "TabBar1Controller",
+              "normalImageName": "home_normal",
+              "highlightedImageName": "home_pressed",
+              "title":"标签1"
+              },
+              {
+              "className": "TabBar2Controller",
+              "normalImageName": "carshow_normal",
+              "highlightedImageName": "carshow_pressed",
+              "title":"标签2"
+              },
+              {
+              "className": "TabBar3Controller",
+              "normalImageName": "activity_normal",
+              "highlightedImageName": "activity_pressed",
+              "title":"标签3"
+              }
+              ]
+}

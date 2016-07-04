@@ -17,10 +17,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
         self.window = UIWindow(frame:UIScreen.mainScreen().bounds)
-        let mainController = MainViewController()
-        let navigationController = UINavigationController(rootViewController: mainController)
-        self.window?.rootViewController = navigationController
+        
+//        let mainController = MainViewController()
+//        let navigationController = UINavigationController(rootViewController: mainController)
+//        self.window?.rootViewController = navigationController
+        
+        let tabBarController = TabBarController()
+        self.window?.rootViewController = tabBarController
+        
         self.window?.makeKeyAndVisible()
         return true
     }

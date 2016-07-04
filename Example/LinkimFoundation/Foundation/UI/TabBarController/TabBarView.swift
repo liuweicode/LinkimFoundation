@@ -16,10 +16,10 @@ class TabBarView: UIView {
     
     var didSetupConstraints = false
     
-    init(_ aItems:[TabBarItem])
+    init(_ frame:CGRect , _ aItems:[TabBarItem])
     {
         items = aItems
-        super.init(frame: CGRectZero)
+        super.init(frame: frame)
         self.registerNotification(name: Notification_TabBar, selector: #selector(handleNotification(_:)))
         self.initSubViews()
     }
@@ -30,7 +30,7 @@ class TabBarView: UIView {
     
     func initSubViews()
     {
-        for index in 0...self.items.count {
+        for index in 0..<self.items.count {
             let tabBarItem = self.items[index]
             let tabBarItemView = TabBarItemView(tabBarItem)
             tabBarItemView.tag = (index + 1)

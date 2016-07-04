@@ -10,14 +10,16 @@ import UIKit
 
 class TabBarItemView: UIView {
 
+    private var _selectStatus = false
+    
     // 是否选中
     var selectStatus:Bool{
         get {
-            return self.selectStatus
+            return _selectStatus
         }
         set{
-            self.selectStatus = newValue
-            let imageName = self.selectStatus ? self.item.highlightedImageName : self.item.normalImageName
+            _selectStatus = newValue
+            let imageName = _selectStatus ? self.item.highlightedImageName : self.item.normalImageName
             self.imageView.image = UIImage(named: imageName)
         }
     }
