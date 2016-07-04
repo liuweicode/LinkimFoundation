@@ -21,6 +21,9 @@ class TabBarController: UITabBarController {
 
     var tabBarDataSource:TabBarDataSource?
     
+    var tabBarView:TabBarView?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -87,12 +90,13 @@ class TabBarController: UITabBarController {
     
     func initCustomTabbarView()
     {
-        let rect = self.tabBar.bounds
-        let tabBarView = TabBarView(rect, self.tabBarDataSource!.items)
-//        tabBarView.topLineColor = UIColor.colorWithHexString(self.tabBarDataSource!.shadowColor)
-//        tabBarView.backgroundColor = UIColor.colorWithHexString(self.tabBarDataSource!.backgroundColor)
-//        tabBarView.frame = rect
-        self.tabBar.addSubview(tabBarView)
+        self.tabBarView = TabBarView(self.tabBarDataSource!.items)
+        self.tabBarView!.topLineColor = UIColor(rgba: self.tabBarDataSource!.shadowColor, defaultColor: UIColor.redColor())
+        self.tabBarView!.backgroundColor = UIColor(rgba: self.tabBarDataSource!.backgroundColor, defaultColor: UIColor.greenColor())
+        self.tabBar.addSubview(self.tabBarView!)
+        self.tabBarView?.snp_makeConstraints(closure: { (make) in
+            make.edges.equalTo(self.tabBar)
+        })
     }
     
     func handleNotification(notification:NSNotification)

@@ -26,7 +26,7 @@ class TimerViewController: UIViewController {
         let btn = UIButton(type: .System)
         btn.tag = 1
         btn.setTitle("启动定时器", forState: .Normal)
-        btn.backgroundColor = UIColor.colorWithHex8(0xa82020)
+        btn.backgroundColor = UIColor(hex6: 0xa82020)
         return btn
     }()
     
@@ -34,7 +34,7 @@ class TimerViewController: UIViewController {
         let btn = UIButton(type: .System)
         btn.tag = 2
         btn.setTitle("暂停定时器", forState: .Normal)
-        btn.backgroundColor = UIColor.colorWithHex6(0xa82020,alpha: 0.5)
+        btn.backgroundColor = UIColor(hex6: 0xa82020, alpha: 0.5)
         return btn
     }()
     

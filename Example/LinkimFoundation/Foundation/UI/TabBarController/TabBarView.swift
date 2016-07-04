@@ -16,10 +16,10 @@ class TabBarView: UIView {
     
     var didSetupConstraints = false
     
-    init(_ frame:CGRect , _ aItems:[TabBarItem])
+    init(_ aItems:[TabBarItem])
     {
         items = aItems
-        super.init(frame: frame)
+        super.init(frame: CGRectZero)
         self.registerNotification(name: Notification_TabBar, selector: #selector(handleNotification(_:)))
         self.initSubViews()
     }
@@ -39,23 +39,24 @@ class TabBarView: UIView {
                 tabBarItemView.selectStatus = true
             }
         }
+//        self.setNeedsUpdateConstraints()
     }
     
     override func updateConstraints() {
         
         if !didSetupConstraints {
             
-            let preTabBarItemView:TabBarItemView? = nil
+            var preTabBarItemView:TabBarItemView? = nil
             
             let width = UIScreen.mainScreen().bounds.width / CGFloat(self.items.count)
             
-            for index in 0...self.items.count {
+            for index in 0..<self.items.count {
                 
                 let tabBarItemView = self.viewWithTag((index + 1)) as! TabBarItemView
                     
                 tabBarItemView.snp_makeConstraints(closure: { (make) in
-                    make.top.equalTo(self.snp_top)
-                    make.bottom.equalTo(self.snp_bottom)
+                    make.top.equalTo(self.snp_top).offset(6)
+                    make.bottom.equalTo(self.snp_bottom).offset(-6)
                     make.width.equalTo(width)
                     if preTabBarItemView == nil
                     {
@@ -64,13 +65,25 @@ class TabBarView: UIView {
                         make.left.equalTo(preTabBarItemView!.snp_right)
                     }
                 })
+                preTabBarItemView = tabBarItemView
             }
             didSetupConstraints = true
         }
+        super.updateConstraints()
     }
 
     func handleNotification(notification:NSNotification)
     {
-        
+        if notification.isNotification(Notification_TabBar) {
+            if let notifiy:TabBarNotification = notification.object as? TabBarNotification
+            {
+                for subView in self.subviews {
+                    if let itemView:TabBarItemView = subView as? TabBarItemView
+                    {
+                        itemView.selectStatus = ((itemView.tag - 1) == notifiy.index)
+                    }
+                }
+            }
+        }
     }
 }

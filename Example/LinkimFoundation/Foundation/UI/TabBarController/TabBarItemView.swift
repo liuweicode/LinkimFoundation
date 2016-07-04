@@ -44,9 +44,12 @@ class TabBarItemView: UIView {
         let label = UILabel()
         label.textColor = UIColor.whiteColor()
         label.textAlignment = .Center
-        label.font = UIFont.systemFontOfSize(12)
+        label.font = UIFont.systemFontOfSize(9)
         label.backgroundColor = UIColor.redColor()
         label.layer.masksToBounds = true
+//        label.text = " 99 "
+        label.layer.masksToBounds = true;
+        label.layer.cornerRadius = 3;
         return label
     }()
     
@@ -85,13 +88,15 @@ class TabBarItemView: UIView {
             })
             
             label.snp_makeConstraints(closure: { (make) in
-                make.right.equalTo(imageView.snp_right)
                 make.top.equalTo(self.snp_top)
                 make.width.height.greaterThanOrEqualTo(6)
+                make.left.equalTo(imageView.snp_right);
+                make.width.lessThanOrEqualTo(20)
             })
             
             didSetupConstraints = true
         }
+        super.updateConstraints()
     }
     
     func buttonClicked(sender:UIButton)
