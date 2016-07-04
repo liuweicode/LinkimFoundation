@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		095406039B4D371E48D08B38A2975AC8 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735DC92B465CDF20759D5B41704ABA2F /* Error.swift */; };
 		16102E4E35FAA0FC4161282FECE56469 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68ADCB9C7BD76658276F2A6956216D0 /* Timeline.swift */; };
+		1C884A9D1D2A490D00E42579 /* UIImageView+Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C884A9C1D2A490D00E42579 /* UIImageView+Cache.swift */; };
 		24B9ADF25A57C2354C071B815EE42C19 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF9DCFF4483A1023DCF1FF82C112A98 /* Array+Extension.swift */; };
 		2A55E025EE77D8D7933AE6E5185CB2A7 /* NSObject+Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DB992000C4B8EEBA1E5C25AD093843 /* NSObject+Timer.swift */; };
 		2D3405986FC586FA6C0A5E0B6BA7E64E /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA22EC6D5F02857326796ABEB8E5A3 /* Validation.swift */; };
@@ -135,6 +136,7 @@
 		0CC659E5E691BA3063ACA1B95C71E62A /* LinkimFoundation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LinkimFoundation.xcconfig; sourceTree = "<group>"; };
 		10D8B49F24C539D8208C0F17FBE5FFB2 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
 		11F02CD0698386543294D7EDD15CA9A0 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+		1C884A9C1D2A490D00E42579 /* UIImageView+Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Cache.swift"; sourceTree = "<group>"; };
 		1E0ACC2B3D28F5E857546C5CF50F24B3 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
 		20768CFE4DC3D0F4745DD4092CA557F6 /* View+SnapKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View+SnapKit.swift"; path = "Source/View+SnapKit.swift"; sourceTree = "<group>"; };
 		21B0E8D3B48715B6F2D936ED265DA5BE /* Optional+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Optional+Extension.swift"; sourceTree = "<group>"; };
@@ -278,6 +280,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C884A9B1D2A488900E42579 /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				1C884A9C1D2A490D00E42579 /* UIImageView+Cache.swift */,
+			);
+			path = UIImageView;
+			sourceTree = "<group>";
+		};
 		1DF54A201FDB8A9204A77B893F1ABE87 /* LinkimFoundation */ = {
 			isa = PBXGroup;
 			children = (
@@ -364,6 +374,7 @@
 		329AE77FEBDC035A04B3D1F083932160 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				1C884A9B1D2A488900E42579 /* UIImageView */,
 				4551D30E8C930CE6E868BB6824346079 /* Color */,
 			);
 			path = UI;
@@ -853,6 +864,7 @@
 				651E29A3334150A96E33C32E87F57F1A /* NSNotification+Extension.swift in Sources */,
 				2A55E025EE77D8D7933AE6E5185CB2A7 /* NSObject+Timer.swift in Sources */,
 				A6EAA585FCA2928E3079BD12F24DBEBF /* NSTimer+Extension.swift in Sources */,
+				1C884A9D1D2A490D00E42579 /* UIImageView+Cache.swift in Sources */,
 				D5A3AE5F5AD337ADC3338D3C0306FE67 /* Optional+Extension.swift in Sources */,
 				7DB835EF414E34F1E888D1AFE71855DD /* String+Size.swift in Sources */,
 				D25714C909A62E64E29BEF7EF12F27DC /* String+Utils.swift in Sources */,
