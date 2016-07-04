@@ -9,20 +9,11 @@
 import UIKit
 import LinkimFoundation
 
-extension NSObject {
-    class func fromClassName(className : String) -> NSObject {
-        let className = NSBundle.mainBundle().infoDictionary!["CFBundleName"] as! String + "." + className
-        let aClass = NSClassFromString(className) as! UIViewController.Type
-        return aClass.init()
-    }
-}
-
 class TabBarController: UITabBarController {
 
-    var tabBarDataSource:TabBarDataSource?
+    var tabBarDataSource:TabBarDataSource? // tabbar数据源
     
-    var tabBarView:TabBarView?
-    
+    var tabBarView:TabBarView? // 自定义的TabBar
     
     override func viewDidLoad() {
         super.viewDidLoad()
