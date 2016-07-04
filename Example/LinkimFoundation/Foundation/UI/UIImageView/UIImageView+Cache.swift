@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import SDWebImage
 
-typealias CacheImageCompletedBlock = (image: UIImage, error: NSError) -> Void
+typealias CacheImageCompletedBlock = (image: UIImage?, error: NSError?) -> Void
 typealias CacheImageProgressBlock  = (receivedSize: Int, expectedSize: Int) -> Void
 
 public enum LoadImageAnimationType: Int {
@@ -44,14 +45,17 @@ extension UIImageView {
     public func cacheWith(urlString: String, placehold: String?, animationType: LoadImageAnimationType) {
         switch animationType {
         case .AnimationNone:
-            break
-        default:
-            break
+            self.cacheWith(urlString, placehold: placehold, progressBlock: nil, completedBlock: nil)
+        case .AnimationFadeIn:
+            self.cacheWith(urlString, placehold: placehold, progressBlock: nil, completedBlock: { (image, error) in
+                if image != nil {
+                    self.alpha = 0
+                    UIView.animateWithDuration(0.5, animations: { 
+                        self.alpha = 1
+                    })
+                }
+            })
         }
-        if placehold != nil {
-            self.image = UIImage(named: placehold!)
-        }
-        //self.sd_setImageWithURL(NSURL(string: urlString))
     }
     /**
      *  异步加载一张图片
@@ -61,7 +65,7 @@ extension UIImageView {
      *  @param completedBlock 完成回调
      */
     private func cacheWith(urlString: String, placehold: String?, completedBlock: CacheImageCompletedBlock) {
-        
+        self.cacheWith(urlString, placehold: placehold, progressBlock: nil, completedBlock: completedBlock)
     }
     /**
      *  异步加载一张图片
@@ -71,6 +75,7 @@ extension UIImageView {
      *  @param completedBlock 完成回调
      */
     private func cacheWith(urlString: String, progressBlock: CacheImageProgressBlock, completedBlock: CacheImageCompletedBlock) {
+        self.cacheWith(urlString, placehold: nil, progressBlock: progressBlock, completedBlock: completedBlock)
     }
     /**
      *  异步缓存一张图片
@@ -81,7 +86,7 @@ extension UIImageView {
      *  @param completedBlock 完成回调
      */
     private func cacheWith(urlString: String, placehold: String?, progressBlock: CacheImageProgressBlock?, completedBlock: CacheImageCompletedBlock?) {
+        //SDWebImage
+        
     }
-    
-    
 }

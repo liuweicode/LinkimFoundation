@@ -16,7 +16,6 @@
 		19ADF356167BC094DD89B7317E13CCBD /* UIImageView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = B6ECA0F20006142F0A75DF10B4B81451 /* UIImageView+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1B8C102E043967A18FCE2AFFFED59024 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9897B8017D74DEF91DB15C6876141667 /* UIKit.framework */; };
 		1F0F43D8BC4BDECA1F10C96E254F04E8 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD2B7D1B569C9ABCBC523ABC1FDA183 /* String+Utils.swift */; };
-		1F4463F6377A73A1E11B8F29CF0D711B /* UIImageView+Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6917225DF045C3AE12B6930E9DC750 /* UIImageView+Cache.swift */; };
 		2D3405986FC586FA6C0A5E0B6BA7E64E /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6281247EE515467C06082036CE0440 /* Validation.swift */; };
 		32DD881693300A2CEB6C6C29DEC6A517 /* NSObject+Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10623C7A480BC5D9C5D5503530509BA9 /* NSObject+Timer.swift */; };
 		33FFF332E6A99639E21E5CDBA3CEEC37 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C80D4B5877F3A5C24798EF486B8039 /* ImageIO.framework */; };
@@ -260,7 +259,6 @@
 		8C827C16A82C0E781CEEE2B95267FDCA /* Pods-LinkimFoundation_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LinkimFoundation_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		8CD5351206ADFA4B670179E1208C4619 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 		8CE3D2F3D58BFC00251687040DBEAA08 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
-		8D6917225DF045C3AE12B6930E9DC750 /* UIImageView+Cache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImageView+Cache.swift"; sourceTree = "<group>"; };
 		8F7FC5926467F5C8DD55E505B5A2A6E2 /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+HighlightedWebCache.h"; path = "SDWebImage/UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
 		8FFFA3A41F625428794AA96E34CB1608 /* EdgeInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EdgeInsets.swift; path = Source/EdgeInsets.swift; sourceTree = "<group>"; };
 		9018984451E14E436FAB33635C47C1BE /* SnapKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SnapKit.swift; path = Source/SnapKit.swift; sourceTree = "<group>"; };
@@ -402,14 +400,6 @@
 				B1F5E6ECAAC3DB7A97742624EB20C81A /* TimerAgent.swift */,
 			);
 			path = Timer;
-			sourceTree = "<group>";
-		};
-		1719A5B219886C30C21553E994E12E40 /* UIImageView */ = {
-			isa = PBXGroup;
-			children = (
-				8D6917225DF045C3AE12B6930E9DC750 /* UIImageView+Cache.swift */,
-			);
-			path = UIImageView;
 			sourceTree = "<group>";
 		};
 		1DF54A201FDB8A9204A77B893F1ABE87 /* LinkimFoundation */ = {
@@ -636,7 +626,6 @@
 			isa = PBXGroup;
 			children = (
 				20627926E6F81E050453A1B4A29DB807 /* Color */,
-				1719A5B219886C30C21553E994E12E40 /* UIImageView */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -1126,7 +1115,6 @@
 				8EBEFA1B1A4CC998A01416364A0E4223 /* String+Validate.swift in Sources */,
 				814C22F56CA17741C57F57F42AD7FE4D /* TimerAgent.swift in Sources */,
 				5FB686F63DCC92523DA699E056D0C888 /* UIColorExtension.swift in Sources */,
-				1F4463F6377A73A1E11B8F29CF0D711B /* UIImageView+Cache.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
