@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C13C04E1D2A74B4001415D8 /* UIImageView+Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C13C04D1D2A74B4001415D8 /* UIImageView+Cache.swift */; };
 		310D8B0B4AF143A990CD5EEB /* Pods_LinkimFoundation_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CFF9E24B3B0FB20440BBD5 /* Pods_LinkimFoundation_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* MainViewController.swift */; };
@@ -49,6 +50,7 @@
 
 /* Begin PBXFileReference section */
 		021FE9D89DE5F0D498576F87 /* Pods-LinkimFoundation_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkimFoundation_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-LinkimFoundation_Example/Pods-LinkimFoundation_Example.release.xcconfig"; sourceTree = "<group>"; };
+		1C13C04D1D2A74B4001415D8 /* UIImageView+Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Cache.swift"; sourceTree = "<group>"; };
 		2A62A56F9172BC1A89AD5824 /* Pods-LinkimFoundation_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkimFoundation_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LinkimFoundation_Tests/Pods-LinkimFoundation_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4B75C463388ED25A8A10D926 /* Pods_LinkimFoundation_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinkimFoundation_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B377CD808EE47AC3D6A3FA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -109,6 +111,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C13C04C1D2A74B4001415D8 /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				1C13C04D1D2A74B4001415D8 /* UIImageView+Cache.swift */,
+			);
+			path = UIImageView;
+			sourceTree = "<group>";
+		};
 		5C279554EDDE4D858CD00F5D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -238,6 +248,7 @@
 		FE63477B1D266E01004C75AE /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				1C13C04C1D2A74B4001415D8 /* UIImageView */,
 				FE6347821D266E91004C75AE /* TabBarController */,
 			);
 			path = UI;
@@ -477,6 +488,7 @@
 				FE6347861D266F83004C75AE /* TabBarItem.swift in Sources */,
 				FE6347611D2632FC004C75AE /* StringDemoViewController.swift in Sources */,
 				FE63478C1D26822E004C75AE /* TabBarController.swift in Sources */,
+				1C13C04E1D2A74B4001415D8 /* UIImageView+Cache.swift in Sources */,
 				FE63478A1D2678E5004C75AE /* TabBarNotification.swift in Sources */,
 				FE63478E1D2A317D004C75AE /* TabBarDataSource.swift in Sources */,
 				FE6347411D24EFEF004C75AE /* MainView.swift in Sources */,
