@@ -87,6 +87,20 @@ extension UIImageView {
      */
     private func cacheWith(urlString: String, placehold: String?, progressBlock: CacheImageProgressBlock?, completedBlock: CacheImageCompletedBlock?) {
         //SDWebImage
-        
+        let url = NSURL(string: urlString)
+        let image = placehold != nil ? UIImage(named: placehold!) : nil
+
+        self.sd_setImageWithURL(url, placeholderImage: image, options: .RetryFailed, progress: { (recSize, expSize) in
+                if progressBlock != nil {
+                    progressBlock!(receivedSize: recSize, expectedSize: expSize)
+                }
+            }) { (image, error, cacheType, url) in
+                if error != nil {
+                    debugPrint("图片加载失败URL：\(url) ")
+                }
+                if completedBlock != nil {
+                    completedBlock!(image: image, error: error)
+                }
+        }
     }
 }

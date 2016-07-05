@@ -19,7 +19,8 @@ class MainViewController: UIViewController,UITableViewDataSource,UITableViewDele
 
     let vcList = [  "Notification",
                     "Timer",
-                    "String"
+                    "String",
+                    "UIImageView"
                  ]
     
     override func viewDidLoad() {
@@ -62,6 +63,9 @@ class MainViewController: UIViewController,UITableViewDataSource,UITableViewDele
             self.navigationController?.pushViewController(controller, animated: true)
         case 2: // String
             let controller = StringDemoViewController()
+            self.navigationController?.pushViewController(controller, animated: true)
+        case 3: // UIImageView
+            let controller = UIimageViewViewController()
             self.navigationController?.pushViewController(controller, animated: true)
         default:
             break
