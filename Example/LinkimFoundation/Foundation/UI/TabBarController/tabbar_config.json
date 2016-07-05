@@ -3,10 +3,10 @@
     "shadowColor": "#CCCCCCDD",
     "items": [
               {
-              "className": "TabBar1Controller",
+              "className": "MainViewController",
               "normalImageName": "home_normal",
               "highlightedImageName": "home_pressed",
-              "title":"标签1"
+              "title":"首页"
               },
               {
               "className": "TabBar2Controller",
