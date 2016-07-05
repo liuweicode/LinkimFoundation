@@ -105,6 +105,7 @@
 		F4232EC68F240CF59C952F0E619E7AD2 /* SDWebImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 701EAD29D3EB058D08011399E9177EA8 /* SDWebImage-dummy.m */; };
 		F6B0DED1996C4CDB535221BBA8914F93 /* SDImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B8915C8FDF8216C62F0AAD181D1EEDA /* SDImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F80FAD1B40A822E3E565B9DCF60CADF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D16E89E4A1AC6E5C41EF65F1433E0C /* Foundation.framework */; };
+		FE6347AC1D2BA4BF004C75AE /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347AB1D2BA4BF004C75AE /* UIScreen+Extension.swift */; };
 		FFEAA0C346BD642948BAC88DFB5F20F8 /* Pods-LinkimFoundation_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F652C7A5E0A5E15CF4717F9E796BEE19 /* Pods-LinkimFoundation_Example-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -311,6 +312,7 @@
 		F78680D82D537881BD65D376883B7000 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBBE34666A701808F592FCC7959B763B /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
 		FE41414FC3DE9730EC21EE0ABBB64FDE /* Pods-LinkimFoundation_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LinkimFoundation_Example-resources.sh"; sourceTree = "<group>"; };
+		FE6347AB1D2BA4BF004C75AE /* UIScreen+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
 		FFF8B28D0CDCA633EF87F1A42DAA2545 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -479,6 +481,7 @@
 		58AE4488A3E4AB5E1EC9FE914438D08B /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				FE6347AA1D2BA4BF004C75AE /* UIScreen */,
 				DB26A36AC5AD8861559D20DB8AB7C247 /* Color */,
 			);
 			path = UI;
@@ -777,6 +780,14 @@
 				74A44205F8AC0D51848E8824F04C5E63 /* SwiftyJSON */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		FE6347AA1D2BA4BF004C75AE /* UIScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FE6347AB1D2BA4BF004C75AE /* UIScreen+Extension.swift */,
+			);
+			path = UIScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1117,6 +1128,7 @@
 				7B48852C4D848FA2DA416A98F6425869 /* ServerTrustPolicy.swift in Sources */,
 				AE4CF87C02C042DF13ED5B21C4FDC1E0 /* Stream.swift in Sources */,
 				16102E4E35FAA0FC4161282FECE56469 /* Timeline.swift in Sources */,
+				FE6347AC1D2BA4BF004C75AE /* UIScreen+Extension.swift in Sources */,
 				5BC19E6E0F199276003F0AF96838BCE5 /* Upload.swift in Sources */,
 				2D3405986FC586FA6C0A5E0B6BA7E64E /* Validation.swift in Sources */,
 			);

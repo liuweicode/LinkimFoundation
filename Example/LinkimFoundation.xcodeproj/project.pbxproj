@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1C13C04E1D2A74B4001415D8 /* UIImageView+Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C13C04D1D2A74B4001415D8 /* UIImageView+Cache.swift */; };
+		1C6DAB241D2B961800F5988F /* UIimageViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6DAB231D2B961800F5988F /* UIimageViewViewController.swift */; };
 		310D8B0B4AF143A990CD5EEB /* Pods_LinkimFoundation_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CFF9E24B3B0FB20440BBD5 /* Pods_LinkimFoundation_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* MainViewController.swift */; };
@@ -51,6 +52,7 @@
 /* Begin PBXFileReference section */
 		021FE9D89DE5F0D498576F87 /* Pods-LinkimFoundation_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkimFoundation_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-LinkimFoundation_Example/Pods-LinkimFoundation_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1C13C04D1D2A74B4001415D8 /* UIImageView+Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Cache.swift"; sourceTree = "<group>"; };
+		1C6DAB231D2B961800F5988F /* UIimageViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIimageViewViewController.swift; sourceTree = "<group>"; };
 		2A62A56F9172BC1A89AD5824 /* Pods-LinkimFoundation_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkimFoundation_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LinkimFoundation_Tests/Pods-LinkimFoundation_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4B75C463388ED25A8A10D926 /* Pods_LinkimFoundation_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinkimFoundation_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B377CD808EE47AC3D6A3FA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				FE6347421D24F616004C75AE /* NotificationViewController.swift */,
 				FE6347441D24F621004C75AE /* TimerViewController.swift */,
 				FE6347601D2632FC004C75AE /* StringDemoViewController.swift */,
+				1C6DAB231D2B961800F5988F /* UIimageViewViewController.swift */,
 			);
 			name = "Example for LinkimFoundation";
 			path = LinkimFoundation;
@@ -500,6 +503,7 @@
 				FE63477E1D266E01004C75AE /* NetworkError.swift in Sources */,
 				FE6347431D24F616004C75AE /* NotificationViewController.swift in Sources */,
 				FE6347801D266E01004C75AE /* NetworkRequest.swift in Sources */,
+				1C6DAB241D2B961800F5988F /* UIimageViewViewController.swift in Sources */,
 				FE63477F1D266E01004C75AE /* NetworkMessage.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
