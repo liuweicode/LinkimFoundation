@@ -37,6 +37,7 @@
 		FE6347981D2A4D3E004C75AE /* TabBar1Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347971D2A4D3E004C75AE /* TabBar1Controller.swift */; };
 		FE63479A1D2A4D5E004C75AE /* TabBar2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347991D2A4D5E004C75AE /* TabBar2Controller.swift */; };
 		FE63479C1D2A4D6D004C75AE /* TabBar3Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE63479B1D2A4D6D004C75AE /* TabBar3Controller.swift */; };
+		FE6347B01D2BABE0004C75AE /* SandboxTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347AF1D2BABE0004C75AE /* SandboxTestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		FE6347971D2A4D3E004C75AE /* TabBar1Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBar1Controller.swift; sourceTree = "<group>"; };
 		FE6347991D2A4D5E004C75AE /* TabBar2Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBar2Controller.swift; sourceTree = "<group>"; };
 		FE63479B1D2A4D6D004C75AE /* TabBar3Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBar3Controller.swift; sourceTree = "<group>"; };
+		FE6347AF1D2BABE0004C75AE /* SandboxTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SandboxTestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 				FE6347441D24F621004C75AE /* TimerViewController.swift */,
 				FE6347601D2632FC004C75AE /* StringDemoViewController.swift */,
 				1C6DAB231D2B961800F5988F /* UIimageViewViewController.swift */,
+				FE6347AF1D2BABE0004C75AE /* SandboxTestViewController.swift */,
 			);
 			name = "Example for LinkimFoundation";
 			path = LinkimFoundation;
@@ -503,6 +506,7 @@
 				FE63477E1D266E01004C75AE /* NetworkError.swift in Sources */,
 				FE6347431D24F616004C75AE /* NotificationViewController.swift in Sources */,
 				FE6347801D266E01004C75AE /* NetworkRequest.swift in Sources */,
+				FE6347B01D2BABE0004C75AE /* SandboxTestViewController.swift in Sources */,
 				1C6DAB241D2B961800F5988F /* UIimageViewViewController.swift in Sources */,
 				FE63477F1D266E01004C75AE /* NetworkMessage.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,

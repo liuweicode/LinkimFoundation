@@ -63,7 +63,8 @@ class TabBarController: UITabBarController {
                 if let controller:UIViewController = NSObject.fromClassName(item.className) as? UIViewController
                 {
                     controller.title = item.title
-                    controllers.append(controller)
+                    let navigationController = UINavigationController(rootViewController: controller)
+                    controllers.append(navigationController)
                 }
             }
             self.viewControllers = controllers

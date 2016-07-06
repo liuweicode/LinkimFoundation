@@ -10,10 +10,30 @@ import UIKit
 
 class TabBar1Controller: UIViewController {
 
+    let pathBtn:UIButton = {
+        let pathBtn = UIButton(type: .System)
+        pathBtn.setTitle("path", forState: .Normal)
+        return pathBtn
+    }()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.randomColor()
+        view.addSubview(pathBtn)
         
+        pathBtn.snp_makeConstraints { (make) in
+            make.top.equalTo(view.snp_top).offset(100)
+            make.centerX.equalTo(view.snp_centerX)
+            make.width.equalTo(100)
+            make.height.equalTo(40)
+        }
+        pathBtn.addTarget(self, action: #selector(pathTest(_:)), forControlEvents: .TouchUpInside)
+    }
+    
+    func pathTest(sender:UIButton)
+    {
+        let controller = SandboxTestViewController()
+        self.navigationController?.pushViewController(controller, animated: true)
     }
 
 }
