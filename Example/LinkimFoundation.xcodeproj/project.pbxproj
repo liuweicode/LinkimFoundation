@@ -18,6 +18,7 @@
 		F8D1486EA9CC8A5E7224C01C /* Pods_LinkimFoundation_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B75C463388ED25A8A10D926 /* Pods_LinkimFoundation_Example.framework */; };
 		FE02F98F1D2CC89C00221480 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE02F98E1D2CC89C00221480 /* AlertView.swift */; };
 		FE16DE781D2E00B900B675BF /* TableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE16DE771D2E00B900B675BF /* TableView+Extension.swift */; };
+		FE16DE7B1D2E0B4000B675BF /* CycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE16DE7A1D2E0B4000B675BF /* CycleView.swift */; };
 		FE6347411D24EFEF004C75AE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347401D24EFEF004C75AE /* MainView.swift */; };
 		FE6347431D24F616004C75AE /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347421D24F616004C75AE /* NotificationViewController.swift */; };
 		FE6347451D24F621004C75AE /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347441D24F621004C75AE /* TimerViewController.swift */; };
@@ -76,6 +77,7 @@
 		EDF24AB22F8C9C4018EF1456 /* Pods-LinkimFoundation_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkimFoundation_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LinkimFoundation_Example/Pods-LinkimFoundation_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		FE02F98E1D2CC89C00221480 /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		FE16DE771D2E00B900B675BF /* TableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TableView+Extension.swift"; sourceTree = "<group>"; };
+		FE16DE7A1D2E0B4000B675BF /* CycleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleView.swift; sourceTree = "<group>"; };
 		FE6347401D24EFEF004C75AE /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		FE6347421D24F616004C75AE /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		FE6347441D24F621004C75AE /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
@@ -246,6 +248,7 @@
 		FE16DE791D2E0AE700B675BF /* CycleView */ = {
 			isa = PBXGroup;
 			children = (
+				FE16DE7A1D2E0B4000B675BF /* CycleView.swift */,
 			);
 			path = CycleView;
 			sourceTree = "<group>";
@@ -537,6 +540,7 @@
 				FE63479C1D2A4D6D004C75AE /* TabBar3Controller.swift in Sources */,
 				FE6347981D2A4D3E004C75AE /* TabBar1Controller.swift in Sources */,
 				FE6347881D267017004C75AE /* TabBarItemView.swift in Sources */,
+				FE16DE7B1D2E0B4000B675BF /* CycleView.swift in Sources */,
 				FE63477C1D266E01004C75AE /* NetworkClient.swift in Sources */,
 				FE63477E1D266E01004C75AE /* NetworkError.swift in Sources */,
 				FE6347431D24F616004C75AE /* NotificationViewController.swift in Sources */,

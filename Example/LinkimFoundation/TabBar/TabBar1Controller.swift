@@ -22,12 +22,6 @@ class TabBar1Controller: UIViewController {
         view.backgroundColor = UIColor.randomColor()
         view.addSubview(pathBtn)
         
-        kScreenWidth
-        if UIScreen.sizeType() == .Size_3_5
-        {
-        
-        }
-        
         pathBtn.snp_makeConstraints { (make) in
             make.top.equalTo(view.snp_top).offset(100)
             make.centerX.equalTo(view.snp_centerX)
