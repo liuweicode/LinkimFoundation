@@ -10,10 +10,11 @@ import UIKit
 
 protocol CycleViewDataSource {
     
+    /// 数据源数量
     func itemCount() -> NSInteger
     
+    /// 自定义展示样式
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath)->UICollectionViewCell
-    
 }
 
 protocol CycleViewDelegate {

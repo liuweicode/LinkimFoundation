@@ -11,6 +11,7 @@ import LinkimFoundation
 
 class AdvertView: UIView {
 
+    /// 轮播控件
     var cycleView:CycleView = {
         let cycleView = CycleView()
         cycleView.timerInterval = 3
@@ -18,6 +19,7 @@ class AdvertView: UIView {
         return cycleView
     }()
     
+    /// 翻页控件
     var pageView:AdvertPageView = {
         let advertPageView = AdvertPageView()
         advertPageView.pageAlignStyle = .Right
@@ -28,7 +30,7 @@ class AdvertView: UIView {
     
     init()
     {
-        super.init(frame: CGRect(x: 0, y: 0, width: ScreenWidth, height: ScreenWidth * 0.75))
+        super.init(frame: CGRect(x: 0, y: 0, width: ScreenWidth, height: ScreenWidth * 0.5))
         addSubview(cycleView)
         addSubview(pageView)
         cycleView.setPageView(pageView)
