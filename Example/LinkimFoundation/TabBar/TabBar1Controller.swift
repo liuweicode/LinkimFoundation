@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LinkimFoundation
 
 class TabBar1Controller: UIViewController {
 
@@ -20,6 +21,12 @@ class TabBar1Controller: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor.randomColor()
         view.addSubview(pathBtn)
+        
+        kScreenWidth
+        if UIScreen.sizeType() == .Size_3_5
+        {
+        
+        }
         
         pathBtn.snp_makeConstraints { (make) in
             make.top.equalTo(view.snp_top).offset(100)

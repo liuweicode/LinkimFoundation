@@ -79,5 +79,9 @@ class MainViewController: UIViewController,UITableViewDataSource,UITableViewDele
             break
         }
     }
+    
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.cellLineFull(cell)
+    }
 }
 

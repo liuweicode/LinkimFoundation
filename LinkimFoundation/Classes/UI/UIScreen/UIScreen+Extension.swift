@@ -8,31 +8,50 @@
 
 import Foundation
 
-//常量
-public let kScreenWidth = UIScreen.mainScreen().bounds.width
-public let kScreenHeight = UIScreen.mainScreen().bounds.height
+//屏幕宽度
+public let ScreenWidth = UIScreen.mainScreen().bounds.width
+//屏幕高度
+public let ScreenHeight = UIScreen.mainScreen().bounds.height
 
 public enum ScreenSizeType : Int {
-    case Size_3_5
-    case Size_4_0
-    case Size_4_7
-    case Size_5_5
+    case Screen3_5Inch = 0
+    case Screen4Inch
+    case Screen4_7Inch
+    case Screen5_5Inch
+    case UnknownSize
 }
 
 extension UIScreen {
     
+    /**
+     屏幕尺寸类型，仅支持iphone系列
+     
+     - returns: ScreenSizeType
+     */
     public class func sizeType() -> ScreenSizeType {
-        switch kScreenHeight {
+        switch ScreenHeight {
         case 480:
-            return .Size_3_5
+            return .Screen3_5Inch
         case 568:
-            return .Size_4_0
+            return .Screen4Inch
         case 667:
-            return .Size_4_7
+            return UIScreen.mainScreen().scale == 3.0 ? .Screen5_5Inch : .Screen4_7Inch
         case 736:
-            return .Size_5_5
+            return .Screen5_5Inch
         default:
-            return .Size_5_5
+            return .UnknownSize
         }
+    }
+    
+    static public func isEqualToScreenSize(size: ScreenSizeType) -> Bool {
+        return size == UIScreen.sizeType() ? true : false;
+    }
+    
+    static public func isLargerThanScreenSize(size: ScreenSizeType) -> Bool {
+        return size.rawValue < UIScreen.sizeType().rawValue ? true : false;
+    }
+    
+    static public func isSmallerThanScreenSize(size: ScreenSizeType) -> Bool {
+        return size.rawValue > UIScreen.sizeType().rawValue ? true : false;
     }
 }

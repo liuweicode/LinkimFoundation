@@ -12,6 +12,7 @@ class MainView: UIView {
 
     let tableView:UITableView = {
         let tableView = UITableView()
+        tableView.cellLineHidden()
         return tableView
     }()
 
