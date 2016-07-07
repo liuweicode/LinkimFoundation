@@ -10,8 +10,13 @@ import UIKit
 import LinkimFoundation
 import SnapKit
 
-class MainViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+class MainViewController: UIViewController,UITableViewDataSource,UITableViewDelegate,CycleViewDataSource,CycleViewDelegate {
 
+    let dataSource: [String] = {
+        let dataSource = ["AD_1.jpg","AD_2.jpg"]
+        return dataSource
+    }()
+    
     let rootView: MainView = {
         let rooView = MainView()
         return rooView
@@ -27,6 +32,9 @@ class MainViewController: UIViewController,UITableViewDataSource,UITableViewDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        rootView.advertView.cycleView.dataSource = self
+        rootView.advertView.cycleView.delegate = self
+        rootView.advertView.cycleView.getPageView()?.setPageSize(dataSource.count)
         rootView.tableView.dataSource = self
         rootView.tableView.delegate = self
         view.addSubview(rootView)
@@ -82,6 +90,22 @@ class MainViewController: UIViewController,UITableViewDataSource,UITableViewDele
     
     func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         tableView.cellLineFull(cell)
+    }
+    
+    // CycleViewDataSource
+    func itemCount() -> NSInteger {
+        return self.dataSource.count
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(ADVERT_COLLECTION_CELL_ID, forIndexPath: indexPath) as! AdvertCollectionViewCell
+        cell.setImage(self.dataSource[indexPath.row])
+        return cell
+    }
+    
+    // CycleViewDelegate
+    func itemDidSelected(indexPath: NSIndexPath) {
+        print("itemDidSelected:\(indexPath.section) \(indexPath.row)")
     }
 }
 

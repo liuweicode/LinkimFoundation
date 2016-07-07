@@ -10,6 +10,11 @@ import UIKit
 
 class MainView: UIView {
 
+    let advertView:AdvertView = {
+        let advertView = AdvertView()
+        return advertView
+    }()
+    
     let tableView:UITableView = {
         let tableView = UITableView()
         tableView.cellLineHidden()
@@ -19,6 +24,7 @@ class MainView: UIView {
     init()
     {
         super.init(frame: CGRectZero)
+        tableView.tableHeaderView = advertView
         addSubview(tableView)
         tableView.snp_makeConstraints { (make) in
             make.edges.equalTo(self)

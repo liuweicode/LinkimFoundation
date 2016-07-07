@@ -19,6 +19,14 @@
 		FE02F98F1D2CC89C00221480 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE02F98E1D2CC89C00221480 /* AlertView.swift */; };
 		FE16DE781D2E00B900B675BF /* TableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE16DE771D2E00B900B675BF /* TableView+Extension.swift */; };
 		FE16DE7B1D2E0B4000B675BF /* CycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE16DE7A1D2E0B4000B675BF /* CycleView.swift */; };
+		FE16DE7D1D2E1C6A00B675BF /* CyclePageBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE16DE7C1D2E1C6A00B675BF /* CyclePageBaseView.swift */; };
+		FE16DE821D2E308300B675BF /* AD_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE16DE801D2E308300B675BF /* AD_1.jpg */; };
+		FE16DE831D2E308300B675BF /* AD_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE16DE811D2E308300B675BF /* AD_2.jpg */; };
+		FE16DE861D2E311A00B675BF /* AdvertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE16DE851D2E311A00B675BF /* AdvertView.swift */; };
+		FE16DE881D2E315200B675BF /* AdvertPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE16DE871D2E315200B675BF /* AdvertPageView.swift */; };
+		FE16DE8B1D2E322000B675BF /* guide_page_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = FE16DE891D2E322000B675BF /* guide_page_normal.png */; };
+		FE16DE8C1D2E322000B675BF /* guide_page_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = FE16DE8A1D2E322000B675BF /* guide_page_pressed.png */; };
+		FE16DE8E1D2E32BA00B675BF /* AdvertCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE16DE8D1D2E32BA00B675BF /* AdvertCollectionViewCell.swift */; };
 		FE6347411D24EFEF004C75AE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347401D24EFEF004C75AE /* MainView.swift */; };
 		FE6347431D24F616004C75AE /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347421D24F616004C75AE /* NotificationViewController.swift */; };
 		FE6347451D24F621004C75AE /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347441D24F621004C75AE /* TimerViewController.swift */; };
@@ -78,6 +86,14 @@
 		FE02F98E1D2CC89C00221480 /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		FE16DE771D2E00B900B675BF /* TableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TableView+Extension.swift"; sourceTree = "<group>"; };
 		FE16DE7A1D2E0B4000B675BF /* CycleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleView.swift; sourceTree = "<group>"; };
+		FE16DE7C1D2E1C6A00B675BF /* CyclePageBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CyclePageBaseView.swift; sourceTree = "<group>"; };
+		FE16DE801D2E308300B675BF /* AD_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AD_1.jpg; sourceTree = "<group>"; };
+		FE16DE811D2E308300B675BF /* AD_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AD_2.jpg; sourceTree = "<group>"; };
+		FE16DE851D2E311A00B675BF /* AdvertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvertView.swift; sourceTree = "<group>"; };
+		FE16DE871D2E315200B675BF /* AdvertPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvertPageView.swift; sourceTree = "<group>"; };
+		FE16DE891D2E322000B675BF /* guide_page_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guide_page_normal.png; sourceTree = "<group>"; };
+		FE16DE8A1D2E322000B675BF /* guide_page_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guide_page_pressed.png; sourceTree = "<group>"; };
+		FE16DE8D1D2E32BA00B675BF /* AdvertCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvertCollectionViewCell.swift; sourceTree = "<group>"; };
 		FE6347401D24EFEF004C75AE /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		FE6347421D24F616004C75AE /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		FE6347441D24F621004C75AE /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
@@ -165,6 +181,8 @@
 		607FACD21AFB9204008FA782 /* Example for LinkimFoundation */ = {
 			isa = PBXGroup;
 			children = (
+				FE16DE841D2E310300B675BF /* AdvertView */,
+				FE16DE7E1D2E308300B675BF /* Source */,
 				FE6347961D2A4D27004C75AE /* TabBar */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* MainViewController.swift */,
@@ -249,8 +267,38 @@
 			isa = PBXGroup;
 			children = (
 				FE16DE7A1D2E0B4000B675BF /* CycleView.swift */,
+				FE16DE7C1D2E1C6A00B675BF /* CyclePageBaseView.swift */,
 			);
 			path = CycleView;
+			sourceTree = "<group>";
+		};
+		FE16DE7E1D2E308300B675BF /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				FE16DE891D2E322000B675BF /* guide_page_normal.png */,
+				FE16DE8A1D2E322000B675BF /* guide_page_pressed.png */,
+				FE16DE7F1D2E308300B675BF /* IndexAD */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		FE16DE7F1D2E308300B675BF /* IndexAD */ = {
+			isa = PBXGroup;
+			children = (
+				FE16DE801D2E308300B675BF /* AD_1.jpg */,
+				FE16DE811D2E308300B675BF /* AD_2.jpg */,
+			);
+			path = IndexAD;
+			sourceTree = "<group>";
+		};
+		FE16DE841D2E310300B675BF /* AdvertView */ = {
+			isa = PBXGroup;
+			children = (
+				FE16DE851D2E311A00B675BF /* AdvertView.swift */,
+				FE16DE871D2E315200B675BF /* AdvertPageView.swift */,
+				FE16DE8D1D2E32BA00B675BF /* AdvertCollectionViewCell.swift */,
+			);
+			path = AdvertView;
 			sourceTree = "<group>";
 		};
 		FE6347651D265960004C75AE /* Foundation */ = {
@@ -408,9 +456,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE16DE821D2E308300B675BF /* AD_1.jpg in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				FE16DE8B1D2E322000B675BF /* guide_page_normal.png in Resources */,
+				FE16DE831D2E308300B675BF /* AD_2.jpg in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 				FE6347951D2A4CB1004C75AE /* tabbar_config.json in Resources */,
+				FE16DE8C1D2E322000B675BF /* guide_page_pressed.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,6 +575,7 @@
 			files = (
 				FED476251D2DF6BA00032112 /* AlertViewDemoViewController.swift in Sources */,
 				FE6347451D24F621004C75AE /* TimerViewController.swift in Sources */,
+				FE16DE861D2E311A00B675BF /* AdvertView.swift in Sources */,
 				FE6347901D2A3279004C75AE /* TabBarConfig.swift in Sources */,
 				FE16DE781D2E00B900B675BF /* TableView+Extension.swift in Sources */,
 				FE63479A1D2A4D5E004C75AE /* TabBar2Controller.swift in Sources */,
@@ -530,9 +583,11 @@
 				FE6347841D266EC3004C75AE /* TabBarView.swift in Sources */,
 				607FACD81AFB9204008FA782 /* MainViewController.swift in Sources */,
 				FE6347861D266F83004C75AE /* TabBarItem.swift in Sources */,
+				FE16DE8E1D2E32BA00B675BF /* AdvertCollectionViewCell.swift in Sources */,
 				FE6347611D2632FC004C75AE /* StringDemoViewController.swift in Sources */,
 				FE63478C1D26822E004C75AE /* TabBarController.swift in Sources */,
 				1C13C04E1D2A74B4001415D8 /* UIImageView+Cache.swift in Sources */,
+				FE16DE881D2E315200B675BF /* AdvertPageView.swift in Sources */,
 				FE63478A1D2678E5004C75AE /* TabBarNotification.swift in Sources */,
 				FE63478E1D2A317D004C75AE /* TabBarDataSource.swift in Sources */,
 				FE6347411D24EFEF004C75AE /* MainView.swift in Sources */,
@@ -540,6 +595,7 @@
 				FE63479C1D2A4D6D004C75AE /* TabBar3Controller.swift in Sources */,
 				FE6347981D2A4D3E004C75AE /* TabBar1Controller.swift in Sources */,
 				FE6347881D267017004C75AE /* TabBarItemView.swift in Sources */,
+				FE16DE7D1D2E1C6A00B675BF /* CyclePageBaseView.swift in Sources */,
 				FE16DE7B1D2E0B4000B675BF /* CycleView.swift in Sources */,
 				FE63477C1D266E01004C75AE /* NetworkClient.swift in Sources */,
 				FE63477E1D266E01004C75AE /* NetworkError.swift in Sources */,
