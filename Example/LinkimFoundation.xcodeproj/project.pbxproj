@@ -27,6 +27,7 @@
 		FE16DE8B1D2E322000B675BF /* guide_page_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = FE16DE891D2E322000B675BF /* guide_page_normal.png */; };
 		FE16DE8C1D2E322000B675BF /* guide_page_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = FE16DE8A1D2E322000B675BF /* guide_page_pressed.png */; };
 		FE16DE8E1D2E32BA00B675BF /* AdvertCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE16DE8D1D2E32BA00B675BF /* AdvertCollectionViewCell.swift */; };
+		FE16DE901D2E59F500B675BF /* KeyboardManagerTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE16DE8F1D2E59F500B675BF /* KeyboardManagerTestViewController.swift */; };
 		FE6347411D24EFEF004C75AE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347401D24EFEF004C75AE /* MainView.swift */; };
 		FE6347431D24F616004C75AE /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347421D24F616004C75AE /* NotificationViewController.swift */; };
 		FE6347451D24F621004C75AE /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347441D24F621004C75AE /* TimerViewController.swift */; };
@@ -94,6 +95,7 @@
 		FE16DE891D2E322000B675BF /* guide_page_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guide_page_normal.png; sourceTree = "<group>"; };
 		FE16DE8A1D2E322000B675BF /* guide_page_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guide_page_pressed.png; sourceTree = "<group>"; };
 		FE16DE8D1D2E32BA00B675BF /* AdvertCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvertCollectionViewCell.swift; sourceTree = "<group>"; };
+		FE16DE8F1D2E59F500B675BF /* KeyboardManagerTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardManagerTestViewController.swift; sourceTree = "<group>"; };
 		FE6347401D24EFEF004C75AE /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		FE6347421D24F616004C75AE /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		FE6347441D24F621004C75AE /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 				1C6DAB231D2B961800F5988F /* UIimageViewViewController.swift */,
 				FE6347AF1D2BABE0004C75AE /* SandboxTestViewController.swift */,
 				FED476241D2DF6BA00032112 /* AlertViewDemoViewController.swift */,
+				FE16DE8F1D2E59F500B675BF /* KeyboardManagerTestViewController.swift */,
 			);
 			name = "Example for LinkimFoundation";
 			path = LinkimFoundation;
@@ -598,6 +601,7 @@
 				FE16DE7D1D2E1C6A00B675BF /* CyclePageBaseView.swift in Sources */,
 				FE16DE7B1D2E0B4000B675BF /* CycleView.swift in Sources */,
 				FE63477C1D266E01004C75AE /* NetworkClient.swift in Sources */,
+				FE16DE901D2E59F500B675BF /* KeyboardManagerTestViewController.swift in Sources */,
 				FE63477E1D266E01004C75AE /* NetworkError.swift in Sources */,
 				FE6347431D24F616004C75AE /* NotificationViewController.swift in Sources */,
 				FE6347801D266E01004C75AE /* NetworkRequest.swift in Sources */,

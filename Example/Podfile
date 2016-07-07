@@ -4,6 +4,8 @@ target 'LinkimFoundation_Example' do
   pod 'LinkimFoundation', :path => '../'
 
   pod 'IQKeyboardManagerSwift', '~> 4.0.4'
+  
+  pod 'CryptoSwift', '~> 0.5.1'
 
   target 'LinkimFoundation_Tests' do
     inherit! :search_paths

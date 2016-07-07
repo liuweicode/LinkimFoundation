@@ -27,7 +27,8 @@ class MainViewController: UIViewController,UITableViewDataSource,UITableViewDele
                     "String",
                     "UIImageView",
                     "AlertView",
-                    "Sandbox"
+                    "Sandbox",
+                    "IQKeyboardManagerSwift"
                  ]
     
     override func viewDidLoad() {
@@ -82,6 +83,10 @@ class MainViewController: UIViewController,UITableViewDataSource,UITableViewDele
             self.navigationController?.pushViewController(controller, animated: true)
         case 5: // Sandbox
             let controller = SandboxTestViewController()
+            self.navigationController?.pushViewController(controller, animated: true)
+        case 6: // IQKeyboardManagerSwift test
+            let controller = KeyboardManagerTestViewController()
+            controller.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(controller, animated: true)
         default:
             break
