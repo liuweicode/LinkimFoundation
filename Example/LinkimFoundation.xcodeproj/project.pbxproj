@@ -16,6 +16,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		F8D1486EA9CC8A5E7224C01C /* Pods_LinkimFoundation_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B75C463388ED25A8A10D926 /* Pods_LinkimFoundation_Example.framework */; };
+		FE02F98F1D2CC89C00221480 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE02F98E1D2CC89C00221480 /* AlertView.swift */; };
 		FE6347411D24EFEF004C75AE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347401D24EFEF004C75AE /* MainView.swift */; };
 		FE6347431D24F616004C75AE /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347421D24F616004C75AE /* NotificationViewController.swift */; };
 		FE6347451D24F621004C75AE /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347441D24F621004C75AE /* TimerViewController.swift */; };
@@ -38,6 +39,7 @@
 		FE63479A1D2A4D5E004C75AE /* TabBar2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347991D2A4D5E004C75AE /* TabBar2Controller.swift */; };
 		FE63479C1D2A4D6D004C75AE /* TabBar3Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE63479B1D2A4D6D004C75AE /* TabBar3Controller.swift */; };
 		FE6347B01D2BABE0004C75AE /* SandboxTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347AF1D2BABE0004C75AE /* SandboxTestViewController.swift */; };
+		FED476251D2DF6BA00032112 /* AlertViewDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED476241D2DF6BA00032112 /* AlertViewDemoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,7 @@
 		953F1B780F142694D6E535C9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C3CFF9E24B3B0FB20440BBD5 /* Pods_LinkimFoundation_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinkimFoundation_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDF24AB22F8C9C4018EF1456 /* Pods-LinkimFoundation_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkimFoundation_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LinkimFoundation_Example/Pods-LinkimFoundation_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		FE02F98E1D2CC89C00221480 /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		FE6347401D24EFEF004C75AE /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		FE6347421D24F616004C75AE /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		FE6347441D24F621004C75AE /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +96,7 @@
 		FE6347991D2A4D5E004C75AE /* TabBar2Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBar2Controller.swift; sourceTree = "<group>"; };
 		FE63479B1D2A4D6D004C75AE /* TabBar3Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBar3Controller.swift; sourceTree = "<group>"; };
 		FE6347AF1D2BABE0004C75AE /* SandboxTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SandboxTestViewController.swift; sourceTree = "<group>"; };
+		FED476241D2DF6BA00032112 /* AlertViewDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewDemoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +173,7 @@
 				FE6347601D2632FC004C75AE /* StringDemoViewController.swift */,
 				1C6DAB231D2B961800F5988F /* UIimageViewViewController.swift */,
 				FE6347AF1D2BABE0004C75AE /* SandboxTestViewController.swift */,
+				FED476241D2DF6BA00032112 /* AlertViewDemoViewController.swift */,
 			);
 			name = "Example for LinkimFoundation";
 			path = LinkimFoundation;
@@ -220,6 +225,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FE02F98D1D2CC88000221480 /* AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				FE02F98E1D2CC89C00221480 /* AlertView.swift */,
+			);
+			path = AlertView;
+			sourceTree = "<group>";
+		};
 		FE6347651D265960004C75AE /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,6 +267,7 @@
 		FE63477B1D266E01004C75AE /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				FE02F98D1D2CC88000221480 /* AlertView */,
 				1C13C04C1D2A74B4001415D8 /* UIImageView */,
 				FE6347821D266E91004C75AE /* TabBarController */,
 			);
@@ -485,6 +499,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FED476251D2DF6BA00032112 /* AlertViewDemoViewController.swift in Sources */,
 				FE6347451D24F621004C75AE /* TimerViewController.swift in Sources */,
 				FE6347901D2A3279004C75AE /* TabBarConfig.swift in Sources */,
 				FE63479A1D2A4D5E004C75AE /* TabBar2Controller.swift in Sources */,
@@ -506,6 +521,7 @@
 				FE63477E1D266E01004C75AE /* NetworkError.swift in Sources */,
 				FE6347431D24F616004C75AE /* NotificationViewController.swift in Sources */,
 				FE6347801D266E01004C75AE /* NetworkRequest.swift in Sources */,
+				FE02F98F1D2CC89C00221480 /* AlertView.swift in Sources */,
 				FE6347B01D2BABE0004C75AE /* SandboxTestViewController.swift in Sources */,
 				1C6DAB241D2B961800F5988F /* UIimageViewViewController.swift in Sources */,
 				FE63477F1D266E01004C75AE /* NetworkMessage.swift in Sources */,

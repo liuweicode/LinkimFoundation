@@ -18,7 +18,7 @@ public extension String
      
      - returns: 字符串大小
      */
-    func sizeWithFont(font font:UIFont,maxSize:CGSize) -> CGSize {
+    public func sizeWithFont(font font:UIFont,maxSize:CGSize) -> CGSize {
         if self.isEmpty {
             return CGSizeZero
         }

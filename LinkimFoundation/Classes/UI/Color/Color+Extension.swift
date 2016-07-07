@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension UIColor
+public extension UIColor
 {
 
 //    /**
@@ -87,7 +87,7 @@ extension UIColor
      
      - returns: UIColor
      */
-    func alphaValue(alpha:CGFloat) -> UIColor {
+    public func alphaValue(alpha:CGFloat) -> UIColor {
         return self.colorWithAlphaComponent(alpha)
     }
     

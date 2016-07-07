@@ -12,6 +12,7 @@ class StringDemoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor.whiteColor()
         
         var str : String?
         var b = str?.isBlank()

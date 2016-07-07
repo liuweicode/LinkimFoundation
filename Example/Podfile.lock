@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (3.4.1)
+  - IQKeyboardManagerSwift (4.0.4)
   - LinkimFoundation (0.0.1):
     - Alamofire (~> 3.4.1)
     - SDWebImage (~> 3.8.1)
@@ -12,6 +13,7 @@ PODS:
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
+  - IQKeyboardManagerSwift (~> 4.0.4)
   - LinkimFoundation (from `../`)
 
 EXTERNAL SOURCES:
@@ -20,11 +22,12 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  IQKeyboardManagerSwift: e0964d04d6a29b71016fd346dca13ecb80a2823a
   LinkimFoundation: 3202cdce929e7e3e0fbce11c414eda85a74a1ef3
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
   SnapKit: bbad04cb016c7cead63965f16b00c09318d271ee
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: 284927c873dddc3bf6e0177a682dcbbc7a4adcd3
+PODFILE CHECKSUM: f3702233e48ee80a99af7567275be931222d723b
 
 COCOAPODS: 1.0.1

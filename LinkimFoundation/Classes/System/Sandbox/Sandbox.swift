@@ -168,11 +168,11 @@ public class Sandbox: NSObject {
                         }
                     }
                 }
-                let  byteCountFormatter =  NSByteCountFormatter()
-                byteCountFormatter.allowedUnits = .UseBytes
-                byteCountFormatter.countStyle = .File
-                let folderSizeToDisplay = byteCountFormatter.stringFromByteCount(Int64(folderFileSizeInBytes))
-                debugPrint(folderSizeToDisplay)  // "X,XXX,XXX bytes"
+//                let  byteCountFormatter =  NSByteCountFormatter()
+//                byteCountFormatter.allowedUnits = .UseBytes
+//                byteCountFormatter.countStyle = .File
+//                let folderSizeToDisplay = byteCountFormatter.stringFromByteCount(Int64(folderFileSizeInBytes))
+//                debugPrint(folderSizeToDisplay)  // "X,XXX,XXX bytes"
                 return folderFileSizeInBytes
             }else{
                 do{

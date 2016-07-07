@@ -3,6 +3,8 @@ use_frameworks!
 target 'LinkimFoundation_Example' do
   pod 'LinkimFoundation', :path => '../'
 
+  pod 'IQKeyboardManagerSwift', '~> 4.0.4'
+
   target 'LinkimFoundation_Tests' do
     inherit! :search_paths
 
