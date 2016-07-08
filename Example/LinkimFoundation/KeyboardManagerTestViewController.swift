@@ -15,10 +15,9 @@ class KeyboardManagerTestViewController: UIViewController, UITextFieldDelegate {
         textField.borderStyle = .RoundedRect
         return textField
     }()
-    let textField2: UITextField = {
-        let textField = UITextField()
+    let textField2: PasswordTextField = {
+        let textField = PasswordTextField()
         textField.borderStyle = .RoundedRect
-        textField.placeholder = "请输入2..."
         return textField
     }()
     
@@ -29,10 +28,13 @@ class KeyboardManagerTestViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.whiteColor()
+        
+        textField1.delegate = self
+        textField2.delegate = self
+        
         view.addSubview(textField1)
         view.addSubview(textField2)
         
-        textField1.delegate = self
         textField1.snp_makeConstraints { (make) in
             make.left.right.equalTo(self.view)
             make.bottom.equalTo(self.view).offset(-100)
@@ -47,7 +49,7 @@ class KeyboardManagerTestViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
-        debugPrint("======")
+        print("======")
         return true
     }
 

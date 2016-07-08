@@ -57,6 +57,7 @@
 		FEF3BF4D1D2F9A1300374DC2 /* NSProtocolInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3BF4C1D2F9A1300374DC2 /* NSProtocolInterceptor.swift */; };
 		FEF3BF501D2F9AEB00374DC2 /* BaseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3BF4F1D2F9AEB00374DC2 /* BaseTextField.swift */; };
 		FEF3BF521D2FAACB00374DC2 /* PhoneTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3BF511D2FAACB00374DC2 /* PhoneTextField.swift */; };
+		FEF3BF541D2FC57400374DC2 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3BF531D2FC57400374DC2 /* PasswordTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +132,7 @@
 		FEF3BF4C1D2F9A1300374DC2 /* NSProtocolInterceptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSProtocolInterceptor.swift; sourceTree = "<group>"; };
 		FEF3BF4F1D2F9AEB00374DC2 /* BaseTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTextField.swift; sourceTree = "<group>"; };
 		FEF3BF511D2FAACB00374DC2 /* PhoneTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneTextField.swift; sourceTree = "<group>"; };
+		FEF3BF531D2FC57400374DC2 /* PasswordTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -434,6 +436,7 @@
 			children = (
 				FEF3BF4F1D2F9AEB00374DC2 /* BaseTextField.swift */,
 				FEF3BF511D2FAACB00374DC2 /* PhoneTextField.swift */,
+				FEF3BF531D2FC57400374DC2 /* PasswordTextField.swift */,
 			);
 			path = TextField;
 			sourceTree = "<group>";
@@ -648,6 +651,7 @@
 				FE6347901D2A3279004C75AE /* TabBarConfig.swift in Sources */,
 				FE16DE781D2E00B900B675BF /* TableView+Extension.swift in Sources */,
 				FE63479A1D2A4D5E004C75AE /* TabBar2Controller.swift in Sources */,
+				FEF3BF541D2FC57400374DC2 /* PasswordTextField.swift in Sources */,
 				FE63477D1D266E01004C75AE /* NetworkClientManager.swift in Sources */,
 				FE6347841D266EC3004C75AE /* TabBarView.swift in Sources */,
 				607FACD81AFB9204008FA782 /* MainViewController.swift in Sources */,
