@@ -8,6 +8,7 @@ PODS:
     - Alamofire (~> 3.4.1)
     - SnapKit (~> 0.21.0)
     - SwiftyJSON (~> 2.3.2)
+  - PKHUD (3.2.1)
   - SnapKit (0.21.1)
   - SwiftyJSON (2.3.2)
 
@@ -16,6 +17,7 @@ DEPENDENCIES:
   - CryptoSwift (~> 0.5.1)
   - IQKeyboardManagerSwift (~> 4.0.4)
   - LinkimFoundation (from `../`)
+  - PKHUD (~> 3.2.1)
 
 EXTERNAL SOURCES:
   LinkimFoundation:
@@ -27,9 +29,10 @@ SPEC CHECKSUMS:
   CryptoSwift: df42dda18baf6c76347a94e227dbcc0a341304bd
   IQKeyboardManagerSwift: e0964d04d6a29b71016fd346dca13ecb80a2823a
   LinkimFoundation: ad82d4933d82607641516edfdd97a09e8a005122
+  PKHUD: 001c11518f125a273ddf026bcc64918423744ea2
   SnapKit: bbad04cb016c7cead63965f16b00c09318d271ee
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: 535219e488fc61ad3c795c5035069199743ec38b
+PODFILE CHECKSUM: 93e442b5dfa273720349ec026bd76cfb02a78ebb
 
 COCOAPODS: 1.0.1

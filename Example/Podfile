@@ -8,6 +8,8 @@ target 'LinkimFoundation_Example' do
   pod 'CryptoSwift', '~> 0.5.1'
   
   pod 'AlamofireImage', '~> 2.4.0'
+  
+  pod 'PKHUD', '~> 3.2.1'
 
   target 'LinkimFoundation_Tests' do
     inherit! :search_paths

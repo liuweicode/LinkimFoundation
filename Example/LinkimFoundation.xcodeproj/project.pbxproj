@@ -29,6 +29,7 @@
 		FE16DE8E1D2E32BA00B675BF /* AdvertCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE16DE8D1D2E32BA00B675BF /* AdvertCollectionViewCell.swift */; };
 		FE16DE901D2E59F500B675BF /* KeyboardManagerTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE16DE8F1D2E59F500B675BF /* KeyboardManagerTestViewController.swift */; };
 		FE16DE941D2E69EA00B675BF /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE16DE931D2E69EA00B675BF /* Reachability.swift */; };
+		FE16DE991D2F72DE00B675BF /* HUDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE16DE981D2F72DE00B675BF /* HUDViewController.swift */; };
 		FE6347411D24EFEF004C75AE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347401D24EFEF004C75AE /* MainView.swift */; };
 		FE6347431D24F616004C75AE /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347421D24F616004C75AE /* NotificationViewController.swift */; };
 		FE6347451D24F621004C75AE /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347441D24F621004C75AE /* TimerViewController.swift */; };
@@ -52,6 +53,7 @@
 		FE63479C1D2A4D6D004C75AE /* TabBar3Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE63479B1D2A4D6D004C75AE /* TabBar3Controller.swift */; };
 		FE6347B01D2BABE0004C75AE /* SandboxTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347AF1D2BABE0004C75AE /* SandboxTestViewController.swift */; };
 		FED476251D2DF6BA00032112 /* AlertViewDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED476241D2DF6BA00032112 /* AlertViewDemoViewController.swift */; };
+		FEF3BF4A1D2F937A00374DC2 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3BF491D2F937A00374DC2 /* ToastView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +100,7 @@
 		FE16DE8D1D2E32BA00B675BF /* AdvertCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvertCollectionViewCell.swift; sourceTree = "<group>"; };
 		FE16DE8F1D2E59F500B675BF /* KeyboardManagerTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardManagerTestViewController.swift; sourceTree = "<group>"; };
 		FE16DE931D2E69EA00B675BF /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		FE16DE981D2F72DE00B675BF /* HUDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUDViewController.swift; sourceTree = "<group>"; };
 		FE6347401D24EFEF004C75AE /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		FE6347421D24F616004C75AE /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		FE6347441D24F621004C75AE /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +124,7 @@
 		FE63479B1D2A4D6D004C75AE /* TabBar3Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBar3Controller.swift; sourceTree = "<group>"; };
 		FE6347AF1D2BABE0004C75AE /* SandboxTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SandboxTestViewController.swift; sourceTree = "<group>"; };
 		FED476241D2DF6BA00032112 /* AlertViewDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewDemoViewController.swift; sourceTree = "<group>"; };
+		FEF3BF491D2F937A00374DC2 /* ToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +205,7 @@
 				FE6347AF1D2BABE0004C75AE /* SandboxTestViewController.swift */,
 				FED476241D2DF6BA00032112 /* AlertViewDemoViewController.swift */,
 				FE16DE8F1D2E59F500B675BF /* KeyboardManagerTestViewController.swift */,
+				FE16DE981D2F72DE00B675BF /* HUDViewController.swift */,
 			);
 			name = "Example for LinkimFoundation";
 			path = LinkimFoundation;
@@ -322,6 +327,13 @@
 			path = Reachability;
 			sourceTree = "<group>";
 		};
+		FE16DE951D2F5D3400B675BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		FE6347651D265960004C75AE /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
@@ -357,6 +369,8 @@
 		FE63477B1D266E01004C75AE /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				FEF3BF481D2F936600374DC2 /* ProgressHUD */,
+				FE16DE951D2F5D3400B675BF /* View */,
 				FE16DE791D2E0AE700B675BF /* CycleView */,
 				FE16DE761D2E00A600B675BF /* TableView */,
 				FE02F98D1D2CC88000221480 /* AlertView */,
@@ -389,6 +403,14 @@
 				FE63479B1D2A4D6D004C75AE /* TabBar3Controller.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		FEF3BF481D2F936600374DC2 /* ProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				FEF3BF491D2F937A00374DC2 /* ToastView.swift */,
+			);
+			path = ProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -607,6 +629,7 @@
 				FE6347861D266F83004C75AE /* TabBarItem.swift in Sources */,
 				FE16DE8E1D2E32BA00B675BF /* AdvertCollectionViewCell.swift in Sources */,
 				FE6347611D2632FC004C75AE /* StringDemoViewController.swift in Sources */,
+				FE16DE991D2F72DE00B675BF /* HUDViewController.swift in Sources */,
 				FE63478C1D26822E004C75AE /* TabBarController.swift in Sources */,
 				1C13C04E1D2A74B4001415D8 /* UIImageView+Cache.swift in Sources */,
 				FE16DE881D2E315200B675BF /* AdvertPageView.swift in Sources */,
@@ -621,6 +644,7 @@
 				FE16DE7B1D2E0B4000B675BF /* CycleView.swift in Sources */,
 				FE63477C1D266E01004C75AE /* NetworkClient.swift in Sources */,
 				FE16DE901D2E59F500B675BF /* KeyboardManagerTestViewController.swift in Sources */,
+				FEF3BF4A1D2F937A00374DC2 /* ToastView.swift in Sources */,
 				FE63477E1D266E01004C75AE /* NetworkError.swift in Sources */,
 				FE6347431D24F616004C75AE /* NotificationViewController.swift in Sources */,
 				FE16DE941D2E69EA00B675BF /* Reachability.swift in Sources */,

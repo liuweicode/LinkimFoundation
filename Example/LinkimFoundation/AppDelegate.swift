@@ -10,6 +10,7 @@ import UIKit
 import CoreGraphics
 import LinkimFoundation
 import IQKeyboardManagerSwift
+import PKHUD
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

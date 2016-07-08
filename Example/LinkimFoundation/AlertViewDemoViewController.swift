@@ -52,13 +52,15 @@ class AlertViewDemoViewController: UIViewController {
 
     func showNormalDialog(sender:UIButton)
     {
-        let cancelBtn = AlertViewButtonItem(inLabel: "取消")
-        
-        let okBtn = AlertViewButtonItem(inLabel: "确定") {
-            print("确定")
+        for i in 0...3 {
+            let cancelBtn = AlertViewButtonItem(inLabel: "取消")
+            
+            let okBtn = AlertViewButtonItem(inLabel: "确定") {
+                print("确定")
+            }
+            let alertView = AlertView(title: "提示", message: "测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容", cancelButtonItem: cancelBtn, otherButtonItems: okBtn)
+            alertView.show()
         }
-        let alertView = AlertView(title: "提示", message: "测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容", cancelButtonItem: cancelBtn, otherButtonItems: okBtn)
-        alertView.show()
     }
 
     func showCustomerDialog(sender:UIButton)
