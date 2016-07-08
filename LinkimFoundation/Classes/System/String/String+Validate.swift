@@ -16,7 +16,7 @@ public extension String
      
      - returns: true / false
      */
-    func isMobile() -> Bool {
+    public func isMobile() -> Bool {
         
         let MOBILE = "^1(3[0-9]|5[0-9]|8[0-9]|4[0-9]|7[0-9])\\d{8}$"
         
@@ -30,7 +30,7 @@ public extension String
      
      - returns: true / false
      */
-    func isIDCard() -> Bool {
+    public func isIDCard() -> Bool {
         
         let MOBILE = "^(\\d{14}|\\d{17})(\\d|[xX])$"
         
@@ -46,9 +46,17 @@ public extension String
      
      - returns: true / false
      */
-    func isBlank() -> Bool {
+    public func isBlank() -> Bool {
         let trimmed = self.trim()
         return trimmed.isEmpty
     }
     
+    public func isPureInt() -> Bool {
+        if self.length > 0 {
+            let scan = NSScanner(string: self)
+            var val:CInt = 0
+            return scan.scanInt(&val) && scan.atEnd
+        }
+        return false
+    }
 }

@@ -8,12 +8,11 @@
 
 import UIKit
 
-class KeyboardManagerTestViewController: UIViewController {
+class KeyboardManagerTestViewController: UIViewController, UITextFieldDelegate {
 
-    let textField1: UITextField = {
-        let textField = UITextField()
+    let textField1: PhoneTextField = {
+        let textField = PhoneTextField()
         textField.borderStyle = .RoundedRect
-        textField.placeholder = "请输入1..."
         return textField
     }()
     let textField2: UITextField = {
@@ -33,6 +32,7 @@ class KeyboardManagerTestViewController: UIViewController {
         view.addSubview(textField1)
         view.addSubview(textField2)
         
+        textField1.delegate = self
         textField1.snp_makeConstraints { (make) in
             make.left.right.equalTo(self.view)
             make.bottom.equalTo(self.view).offset(-100)
@@ -44,7 +44,11 @@ class KeyboardManagerTestViewController: UIViewController {
             make.left.right.equalTo(self.view)
             make.height.equalTo(40)
         }
-        
+    }
+    
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        debugPrint("======")
+        return true
     }
 
 }

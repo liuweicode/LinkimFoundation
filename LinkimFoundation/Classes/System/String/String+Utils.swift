@@ -44,4 +44,15 @@ public extension String
         return optionalString ?? ""
     }
     
+    static func phoneFormat(sourceS:String) -> String{
+        if sourceS.length > 0 {
+            var tmpS = sourceS
+            for i in 3.stride(to: sourceS.length, by: 5) {
+                tmpS.insert(" ", atIndex: sourceS.startIndex.advancedBy(i))
+            }
+            return tmpS
+        }
+        return sourceS
+    }
+    
 }
