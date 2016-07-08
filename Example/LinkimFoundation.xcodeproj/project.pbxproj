@@ -28,6 +28,7 @@
 		FE16DE8C1D2E322000B675BF /* guide_page_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = FE16DE8A1D2E322000B675BF /* guide_page_pressed.png */; };
 		FE16DE8E1D2E32BA00B675BF /* AdvertCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE16DE8D1D2E32BA00B675BF /* AdvertCollectionViewCell.swift */; };
 		FE16DE901D2E59F500B675BF /* KeyboardManagerTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE16DE8F1D2E59F500B675BF /* KeyboardManagerTestViewController.swift */; };
+		FE16DE941D2E69EA00B675BF /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE16DE931D2E69EA00B675BF /* Reachability.swift */; };
 		FE6347411D24EFEF004C75AE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347401D24EFEF004C75AE /* MainView.swift */; };
 		FE6347431D24F616004C75AE /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347421D24F616004C75AE /* NotificationViewController.swift */; };
 		FE6347451D24F621004C75AE /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6347441D24F621004C75AE /* TimerViewController.swift */; };
@@ -96,6 +97,7 @@
 		FE16DE8A1D2E322000B675BF /* guide_page_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guide_page_pressed.png; sourceTree = "<group>"; };
 		FE16DE8D1D2E32BA00B675BF /* AdvertCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvertCollectionViewCell.swift; sourceTree = "<group>"; };
 		FE16DE8F1D2E59F500B675BF /* KeyboardManagerTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardManagerTestViewController.swift; sourceTree = "<group>"; };
+		FE16DE931D2E69EA00B675BF /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		FE6347401D24EFEF004C75AE /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		FE6347421D24F616004C75AE /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		FE6347441D24F621004C75AE /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
@@ -304,9 +306,26 @@
 			path = AdvertView;
 			sourceTree = "<group>";
 		};
+		FE16DE911D2E69EA00B675BF /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				FE16DE921D2E69EA00B675BF /* Reachability */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		FE16DE921D2E69EA00B675BF /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				FE16DE931D2E69EA00B675BF /* Reachability.swift */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
 		FE6347651D265960004C75AE /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				FE16DE911D2E69EA00B675BF /* Vendors */,
 				FE6347731D266E01004C75AE /* System */,
 				FE63477B1D266E01004C75AE /* UI */,
 			);
@@ -604,6 +623,7 @@
 				FE16DE901D2E59F500B675BF /* KeyboardManagerTestViewController.swift in Sources */,
 				FE63477E1D266E01004C75AE /* NetworkError.swift in Sources */,
 				FE6347431D24F616004C75AE /* NotificationViewController.swift in Sources */,
+				FE16DE941D2E69EA00B675BF /* Reachability.swift in Sources */,
 				FE6347801D266E01004C75AE /* NetworkRequest.swift in Sources */,
 				FE02F98F1D2CC89C00221480 /* AlertView.swift in Sources */,
 				FE6347B01D2BABE0004C75AE /* SandboxTestViewController.swift in Sources */,

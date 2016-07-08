@@ -24,6 +24,5 @@ s.requires_arc = true
 s.dependency 'SnapKit', '~> 0.21.0'
 s.dependency 'Alamofire', '~> 3.4.1'
 s.dependency 'SwiftyJSON', '~> 2.3.2'
-s.dependency 'SDWebImage', '~> 3.8.1'
 
 end

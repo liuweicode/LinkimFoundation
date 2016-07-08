@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class UIimageViewViewController: UIViewController {
     
@@ -36,7 +37,10 @@ class UIimageViewViewController: UIViewController {
             make.right.equalTo(view.snp_right).offset(-30)
             make.height.equalTo(imgView.snp_width).multipliedBy(1.5)
         }
-        imgView.cacheWith(imgUrl, placehold: "defalut_image", animationType: .AnimationFadeIn)
+        if let url = NSURL(string: imgUrl)
+        {
+            imgView.cacheWith(url, placeholderImage: UIImage(named: "defalut_image"), imageTransition: .CurlDown(0.2))
+        }
     }
 
     override func didReceiveMemoryWarning() {
