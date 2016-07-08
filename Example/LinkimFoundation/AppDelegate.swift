@@ -62,12 +62,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if reachability.isReachable() {
             if reachability.isReachableViaWiFi() {
-                print("WiFi网络")
+                
+                #if DEBUG
+                    print("DEBUG WiFi网络")
+                #endif
+                
+                #if INHOUSE
+                    print("INHOUSE WiFi网络")
+                #endif
+                
             } else {
                 print("手机网络")
             }
         } else {
-            print("没有网络")
+            
+            #if DEBUG
+                print("DEBUG 没有网络")
+            #endif
+            
+            #if INHOUSE
+                print("INHOUSE 没有网络")
+            #endif
+            
+            
         }
     }
     

@@ -122,8 +122,6 @@ public class Sandbox: NSObject {
     
     public static func human(fileSize: UInt64) -> String {
         let sizeClasses = [
-            (UInt64(1024 * 1024 * 1024 * 1024 * 1024), "PB"),
-            (UInt64(1024 * 1024 * 1024 * 1024), "TB"),
             (UInt64(1024 * 1024 * 1024), "GB"),
             (UInt64(1024 * 1024), "MB"),
             (UInt64(1024), "KB"),
