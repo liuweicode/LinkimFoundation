@@ -54,11 +54,11 @@ public extension NSObject
      
      - parameter name: 通知名称
      */
-    func registerNotification(name aName:String,selector aSelector: Selector)
+    func registerNotification(name aName:String,selector aSelector: Selector,object anObject: AnyObject? = nil)
     {
         // 确保只注册一次
         unRegisterNotification(aName)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: aSelector, name: aName, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: aSelector, name: aName, object: anObject)
     }
     
     /**

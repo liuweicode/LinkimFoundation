@@ -21,6 +21,17 @@ class KeyboardManagerTestViewController: UIViewController, UITextFieldDelegate {
         return textField
     }()
     
+    let placeholderTextView: PlaceholderTextView = {
+        let placeholderTextView = PlaceholderTextView()
+        placeholderTextView.placeholder = "测试测试placeholder"
+        placeholderTextView.placeholderColor = UIColor.darkGrayColor()
+        placeholderTextView.font = UIFont.systemFontOfSize(18)
+        placeholderTextView.layer.borderColor = UIColor.blackColor().CGColor
+        placeholderTextView.layer.borderWidth = 1
+        return placeholderTextView
+    }()
+    
+    
     /* !!!!!!!!!!!!!
      需要在AppDelegate的didFinishLaunchingWithOptions方法中设置：
      IQKeyboardManager.sharedManager().enable = true
@@ -34,10 +45,11 @@ class KeyboardManagerTestViewController: UIViewController, UITextFieldDelegate {
         
         view.addSubview(textField1)
         view.addSubview(textField2)
+        view.addSubview(placeholderTextView)
         
         textField1.snp_makeConstraints { (make) in
             make.left.right.equalTo(self.view)
-            make.bottom.equalTo(self.view).offset(-100)
+            make.top.equalTo(self.view.snp_top).offset(100)
             make.height.equalTo(40)
         }
         
@@ -45,6 +57,12 @@ class KeyboardManagerTestViewController: UIViewController, UITextFieldDelegate {
             make.top.equalTo(textField1.snp_bottom).offset(10)
             make.left.right.equalTo(self.view)
             make.height.equalTo(40)
+        }
+        
+        placeholderTextView.snp_makeConstraints { (make) in
+            make.top.equalTo(textField2.snp_bottom).offset(10)
+            make.left.right.equalTo(self.view).inset(10)
+            make.height.equalTo(100)
         }
     }
     

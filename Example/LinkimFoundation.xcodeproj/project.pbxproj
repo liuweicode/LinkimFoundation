@@ -59,6 +59,7 @@
 		FEF3BF521D2FAACB00374DC2 /* PhoneTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3BF511D2FAACB00374DC2 /* PhoneTextField.swift */; };
 		FEF3BF541D2FC57400374DC2 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3BF531D2FC57400374DC2 /* PasswordTextField.swift */; };
 		FEF3BF561D33440700374DC2 /* SMSCaptchaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3BF551D33440700374DC2 /* SMSCaptchaTextField.swift */; };
+		FEF3BF591D3347B900374DC2 /* PlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3BF581D3347B900374DC2 /* PlaceholderTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +136,7 @@
 		FEF3BF511D2FAACB00374DC2 /* PhoneTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneTextField.swift; sourceTree = "<group>"; };
 		FEF3BF531D2FC57400374DC2 /* PasswordTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 		FEF3BF551D33440700374DC2 /* SMSCaptchaTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMSCaptchaTextField.swift; sourceTree = "<group>"; };
+		FEF3BF581D3347B900374DC2 /* PlaceholderTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceholderTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -427,6 +429,7 @@
 		FEF3BF4B1D2F9A0600374DC2 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				FEF3BF571D33471700374DC2 /* TextView */,
 				FEF3BF4E1D2F9AC300374DC2 /* TextField */,
 				FEF3BF4C1D2F9A1300374DC2 /* NSProtocolInterceptor.swift */,
 			);
@@ -442,6 +445,14 @@
 				FEF3BF551D33440700374DC2 /* SMSCaptchaTextField.swift */,
 			);
 			path = TextField;
+			sourceTree = "<group>";
+		};
+		FEF3BF571D33471700374DC2 /* TextView */ = {
+			isa = PBXGroup;
+			children = (
+				FEF3BF581D3347B900374DC2 /* PlaceholderTextView.swift */,
+			);
+			path = TextView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -673,6 +684,7 @@
 				FE63479C1D2A4D6D004C75AE /* TabBar3Controller.swift in Sources */,
 				FE6347981D2A4D3E004C75AE /* TabBar1Controller.swift in Sources */,
 				FE6347881D267017004C75AE /* TabBarItemView.swift in Sources */,
+				FEF3BF591D3347B900374DC2 /* PlaceholderTextView.swift in Sources */,
 				FE16DE7D1D2E1C6A00B675BF /* CyclePageBaseView.swift in Sources */,
 				FE16DE7B1D2E0B4000B675BF /* CycleView.swift in Sources */,
 				FE63477C1D266E01004C75AE /* NetworkClient.swift in Sources */,
