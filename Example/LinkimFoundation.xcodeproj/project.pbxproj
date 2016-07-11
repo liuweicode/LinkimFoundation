@@ -58,6 +58,7 @@
 		FEF3BF501D2F9AEB00374DC2 /* BaseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3BF4F1D2F9AEB00374DC2 /* BaseTextField.swift */; };
 		FEF3BF521D2FAACB00374DC2 /* PhoneTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3BF511D2FAACB00374DC2 /* PhoneTextField.swift */; };
 		FEF3BF541D2FC57400374DC2 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3BF531D2FC57400374DC2 /* PasswordTextField.swift */; };
+		FEF3BF561D33440700374DC2 /* SMSCaptchaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3BF551D33440700374DC2 /* SMSCaptchaTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +134,7 @@
 		FEF3BF4F1D2F9AEB00374DC2 /* BaseTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTextField.swift; sourceTree = "<group>"; };
 		FEF3BF511D2FAACB00374DC2 /* PhoneTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneTextField.swift; sourceTree = "<group>"; };
 		FEF3BF531D2FC57400374DC2 /* PasswordTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
+		FEF3BF551D33440700374DC2 /* SMSCaptchaTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMSCaptchaTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -437,6 +439,7 @@
 				FEF3BF4F1D2F9AEB00374DC2 /* BaseTextField.swift */,
 				FEF3BF511D2FAACB00374DC2 /* PhoneTextField.swift */,
 				FEF3BF531D2FC57400374DC2 /* PasswordTextField.swift */,
+				FEF3BF551D33440700374DC2 /* SMSCaptchaTextField.swift */,
 			);
 			path = TextField;
 			sourceTree = "<group>";
@@ -683,6 +686,7 @@
 				FE02F98F1D2CC89C00221480 /* AlertView.swift in Sources */,
 				FE6347B01D2BABE0004C75AE /* SandboxTestViewController.swift in Sources */,
 				1C6DAB241D2B961800F5988F /* UIimageViewViewController.swift in Sources */,
+				FEF3BF561D33440700374DC2 /* SMSCaptchaTextField.swift in Sources */,
 				FE63477F1D266E01004C75AE /* NetworkMessage.swift in Sources */,
 				FEF3BF4D1D2F9A1300374DC2 /* NSProtocolInterceptor.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,

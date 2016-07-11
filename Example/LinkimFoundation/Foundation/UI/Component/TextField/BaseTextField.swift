@@ -39,7 +39,7 @@ class BaseTextField: UITextField {
     
     func initMessageInterceptor()
     {
-        assert(self is BaseTextFieldDelegate, "必须在子类实现initTextData方法 %s:%d",file: #function, line: #line)
+        assert(self is BaseTextFieldDelegate, "必须在子类实现BaseTextFieldDelegate协议 %s:%d",file: #function, line: #line)
         delegateInterceptor = NSProtocolInterceptor.forProtocol(UITextFieldDelegate)
         delegateInterceptor!.middleMan = self
         delegateInterceptor!.receiver = self.delegate

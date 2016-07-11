@@ -8,6 +8,7 @@
 
 import Foundation
 
+// 参考 http://stackoverflow.com/questions/3498158/intercept-objective-c-delegate-messages-within-a-subclass
 /**
  `NSProtocolInterceptor` is a proxy which intercepts messages to the middle man
  which originally intended to send to the receiver.
