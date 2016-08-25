@@ -27,7 +27,7 @@ class NetworkClient : NSObject {
     private var target:NSObject
     
     // 超时时间
-    let networkTimeout:NSTimeInterval = 20
+    let networkTimeout:NSTimeInterval = 30
     
     // 请求任务
     var task:Request?
