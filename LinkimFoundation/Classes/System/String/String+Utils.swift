@@ -44,6 +44,13 @@ public extension String
         return optionalString ?? ""
     }
     
+    /**
+     手机号格式化
+     
+     - parameter sourceS: 手机号
+     
+     - returns: 格式化后的手机号
+     */
     static func phoneFormat(sourceS:String) -> String{
         if sourceS.length > 0 {
             var tmpS = sourceS

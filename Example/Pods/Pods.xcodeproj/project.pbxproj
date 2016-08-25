@@ -12,7 +12,6 @@
 		05399B5D2BD87181A00D8D578CF51926 /* NSData+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CC74FAC190C053BA6C3C7197DD6063 /* NSData+Extension.swift */; };
 		0546C903977E220A574706BBFFFD9518 /* View+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4021CA0A00722DF0A173AE53DAB60015 /* View+SnapKit.swift */; };
 		056758E7070C1E9E57B8EB8B56944A48 /* PKHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = C430FE9EF499028B2AAFA471082B7A8A /* PKHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		059A8F2FA3BFC705BB6874BE9A9824D3 /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C3F630F00FF1B47DC5C9EB42076E07 /* FileManager+Extension.swift */; };
 		060319AA896BD846262C071625806529 /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DA80C7D9AC888674CA522083FAA48F /* Authenticator.swift */; };
 		06EDB944284E74970F312CB7F2910C07 /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115B2D7BEDDD5A2933BB5184C86AF081 /* IQBarButtonItem.swift */; };
 		08429BCC5D54ABD6D66CD4D897FF1FAF /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F68AC3AD7ECD0B71F61A3A405C7C7A8 /* IntExtension.swift */; };
@@ -420,7 +419,6 @@
 		8FD4CDA253A12EF45C665E456B948C57 /* BlockModeOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockModeOptions.swift; path = Sources/CryptoSwift/BlockMode/BlockModeOptions.swift; sourceTree = "<group>"; };
 		936C36D0DDB8E2EA5947FA7F7D9974C5 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93C3F630F00FF1B47DC5C9EB42076E07 /* FileManager+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
 		946D9CF657D6CBD8D152E5AC8DC24FC7 /* PKCS7.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKCS7.swift; path = Sources/CryptoSwift/PKCS7.swift; sourceTree = "<group>"; };
 		95C24E169A170D8C13D97F86206E0358 /* LinkimFoundation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LinkimFoundation-dummy.m"; sourceTree = "<group>"; };
 		9863CD7E3152A79A32D093D87580DA22 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
@@ -677,7 +675,6 @@
 		269CBD8625FF1A0A65606B32D15A80AE /* Sandbox */ = {
 			isa = PBXGroup;
 			children = (
-				93C3F630F00FF1B47DC5C9EB42076E07 /* FileManager+Extension.swift */,
 				0DB1253F443B5FF83E746A43062831D8 /* Sandbox.swift */,
 			);
 			path = Sandbox;
@@ -1551,7 +1548,6 @@
 			files = (
 				360E6D80B89D1A955F561CA1CD8665F4 /* Array+Extension.swift in Sources */,
 				D630A040114D9D96681F82C7EBC78631 /* Color+Extension.swift in Sources */,
-				059A8F2FA3BFC705BB6874BE9A9824D3 /* FileManager+Extension.swift in Sources */,
 				7BD52FF185122DD68529AB54AB385ADE /* Image+Color.swift in Sources */,
 				2F6500EF3B1A9F6660D5C56B12F2D66F /* LinkimFoundation-dummy.m in Sources */,
 				18B9CB459A6AB85CAF34B35E2F55E467 /* NSNotification+Extension.swift in Sources */,

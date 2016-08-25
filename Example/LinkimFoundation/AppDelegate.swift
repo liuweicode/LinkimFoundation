@@ -52,7 +52,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         do{
             try reachability?.startNotifier()
         }catch{
-            debugPrint("could not start reachability notifier")
+            print("could not start reachability notifier")
         }
     }
    

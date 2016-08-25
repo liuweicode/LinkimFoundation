@@ -58,7 +58,7 @@ public class Sandbox: NSObject {
         do{
           try NSFileManager.defaultManager().removeItemAtPath(path)
         }catch let error as NSError {
-            debugPrint(error.description)
+            print(error.description)
             result = true
         }
         return result
@@ -79,7 +79,7 @@ public class Sandbox: NSObject {
             do{
                 try NSFileManager.defaultManager().createDirectoryAtPath(directoryPath, withIntermediateDirectories: true, attributes: nil)
             }catch let error as NSError{
-                debugPrint(error.description)
+                print(error.description)
                 result = false
             }
         }
@@ -103,7 +103,7 @@ public class Sandbox: NSObject {
                 do{
                     try NSFileManager.defaultManager().createFileAtPath(filePath, contents: NSData(), attributes: nil)
                 }catch let error as NSError{
-                    debugPrint(error.description)
+                    print(error.description)
                     result = false
                 }
             }else{
@@ -113,7 +113,7 @@ public class Sandbox: NSObject {
             do{
                 try NSFileManager.defaultManager().createFileAtPath(filePath, contents: NSData(), attributes: nil)
             }catch let error as NSError{
-                debugPrint(error.description)
+                print(error.description)
                 result = false
             }
         }
@@ -153,8 +153,8 @@ public class Sandbox: NSObject {
                 var folderFileSizeInBytes:UInt64 = 0
                 if let filesEnumerator = fileManager.enumeratorAtURL(NSURL(fileURLWithPath: filePath, isDirectory: true), includingPropertiesForKeys: nil, options: [], errorHandler: {
                     (url, error) -> Bool in
-                    debugPrint(url.path!)
-                    debugPrint(error.localizedDescription)
+                    print(url.path!)
+                    print(error.localizedDescription)
                     return true
                 }) {
                     while let fileURL = filesEnumerator.nextObject() as? NSURL {
@@ -162,7 +162,7 @@ public class Sandbox: NSObject {
                             let attributes = try fileManager.attributesOfItemAtPath(fileURL.path!) as NSDictionary
                             folderFileSizeInBytes += UInt64(attributes.fileSize().hashValue)
                         } catch let error as NSError {
-                            debugPrint(error.localizedDescription)
+                            print(error.localizedDescription)
                         }
                     }
                 }
@@ -170,7 +170,7 @@ public class Sandbox: NSObject {
 //                byteCountFormatter.allowedUnits = .UseBytes
 //                byteCountFormatter.countStyle = .File
 //                let folderSizeToDisplay = byteCountFormatter.stringFromByteCount(Int64(folderFileSizeInBytes))
-//                debugPrint(folderSizeToDisplay)  // "X,XXX,XXX bytes"
+//                print(folderSizeToDisplay)  // "X,XXX,XXX bytes"
                 return folderFileSizeInBytes
             }else{
                 do{
@@ -179,7 +179,7 @@ public class Sandbox: NSObject {
                     fileSizeInBytes = UInt64(attributes.fileSize().hashValue)
                     return fileSizeInBytes
                 }catch let error as NSError{
-                    debugPrint(error.description)
+                    print(error.description)
                 }
             }
         }
@@ -200,7 +200,7 @@ public class Sandbox: NSObject {
             do{
                 content = try String(contentsOfFile: filePath, encoding: NSUTF8StringEncoding)
             }catch let error as NSError{
-                debugPrint(error.description)
+                print(error.description)
             }
         }
         return content
@@ -236,7 +236,7 @@ public class Sandbox: NSObject {
         do{
             try content.writeToFile(filePath, atomically: true, encoding: NSUTF8StringEncoding)
         }catch let error as NSError{
-            debugPrint(error.description)
+            print(error.description)
             result = false
         }
         return result
@@ -321,10 +321,10 @@ public class Sandbox: NSObject {
                 let path = directory + p
                 if NSFileManager.defaultManager().fileExistsAtPath(path) {
                     do{
-                        debugPrint("删除:\(path)")
+                        print("删除:\(path)")
                         try NSFileManager.defaultManager().removeItemAtPath(path)
                     }catch let error as NSError{
-                        debugPrint(error.description)
+                        print(error.description)
                     }
                 }
             }
@@ -369,11 +369,11 @@ public class Sandbox: NSObject {
         do{
             try content = self.readBundleContentOfFileName(fileName, type: "json")
         }catch{
-            debugPrint("加载Json配置出错")
+            print("加载Json配置出错")
         }
         
         guard let con = content else{
-            debugPrint("没有读取到JSON内容")
+            print("没有读取到JSON内容")
             return nil
         }
         
